@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'GothicA1-Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/GothicA1-Light.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+}
+body{
+    
+}
+/* Main Screen Styling */
+    /* TOP CONTAINER */
+.top-container{
+    height: 50vh;
+    width: 100vw;
+    background-color: rgb(250, 250, 250);
+}
+.links-container{
+    float: right;
+    position: fixed;
+    top: 40%;
+    right: 0%;
+    transform: translateY(-50%);
+}
+.links-list{
+    /* display: flex; */
+    list-style: none;
+}
+.links-list li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1.2px rgb(25, 25, 25);
+    border-radius: 30px;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    transition: all 0.15s cubic-bezier(.76,-0.01,.23,1);
+}
+.link{
+    color: rgb(25, 25, 25);
+    font-family: "Helvetica";
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    padding: 0rem 0.5rem;
+    cursor: grab;
+}
+.links-list li:hover{
+    background-color: gainsboro;
+    color: rgb(250, 250, 250);
+
+}
+    /* BOTTOM CONTAINER */
+.bottom-container {
+
+    height: 50vh;
+    width: 100vw;
+    background-color: blue;
+}
+.projects-view-container{
+    position: fixed;
+    bottom: 38%;
+    left: 0%;
+    /* transform: translateY(50%); */
+}
+.project-views-list{
+    /* display: flex; */
+    list-style: none;
+}
+.project-view{
+    color: rgb(250, 250, 250);
+    font-family: "Helvetica";
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1.2px rgb(250, 250, 250);
+    border-radius: 30px;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.15s cubic-bezier(.76,-0.01,.23,1);
+}
+.project-view:hover{
+    background-color: rgb(250, 250, 250);
+    color: blue;
+}
+.bio-english{
+    padding: 0.5rem;
+    font-family: "Helvetica";
+    font-size: 1.3rem;
+    font-weight: lighter;
+}
+.bio-korean{
+    font-family: 'GothicA1-Light';
+    padding: 0.5rem;
+    color: rgb(250, 250, 250);
+    float: right;
+    font-size: 1.3rem;
+    font-weight: lighter;
+}
