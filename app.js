@@ -10,14 +10,32 @@ index_btn.addEventListener('click', ()=>{
     intro_page.style.top = "-100vh";
     index_page.style.top = "0vh";
     detail_page.style.top = "100vh"
+    index_btn.style.color = "rgb(0, 0, 250)"
+    index_btn.style.border = "solid 1px rgb(0, 0, 250)"
+    home_btn.style.color = "rgb(0, 0, 250)"
+    home_btn.style.border = "solid 1px rgb(0, 0, 250)"
+    detail_btn.style.color = "rgb(0, 0, 250)"
+    detail_btn.style.border = "solid 1px rgb(0, 0, 250)"
 })
 home_btn.addEventListener('click', ()=>{
     intro_page.style.top = "0vh";
     index_page.style.top = "100vh";
     detail_page.style.top = "200vh"
+    index_btn.style.color = "rgb(25, 25, 25)"
+    index_btn.style.border = "solid 1px rgb(25, 25, 25)"
+    home_btn.style.color = "rgb(25, 25, 25)"
+    home_btn.style.border = "solid 1px rgb(25, 25, 25)"
+    detail_btn.style.color = "rgb(25, 25, 25)"
+    detail_btn.style.border = "solid 1px rgb(25, 25, 25)"
 })
 detail_btn.addEventListener("click", ()=>{
     intro_page.style.top = "-200vh";
     index_page.style.top = "-100vh";
     detail_page.style.top = "0vh";
+    index_btn.style.color = "var(--font-color-white)"
+    index_btn.style.border = "solid 1px var(--font-color-white)"
+    home_btn.style.color = "var(--font-color-white)"
+    home_btn.style.border = "solid 1px var(--font-color-white)"
+    detail_btn.style.color = "var(--font-color-white)"
+    detail_btn.style.border = "solid 1px var(--font-color-white)"
 })
