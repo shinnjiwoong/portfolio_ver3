@@ -3,11 +3,12 @@
     --bg-color: #f1f1f1;
     --bg-color-2 : rgb(25, 25, 25);
     --bg-color-3 : rgb(200, 200, 200);
-    --tag-color-1 : #0c03ff;
-    --tag-color-2 : #48a700;
-    --tag-color-3 : #ff4603;
-    --tag-color-4 : #d467a3;
+    --tag-color-1 : rgb(255, 0, 0);
+    --tag-color-2 : rgb(0, 255, 255);
+    --tag-color-3 : rgb(249, 249, 0);
+    --tag-color-4 : rgb(0, 255, 0);
     --font-color-white : rgb(250, 250, 250);
+    --font-color-black : rgb(25, 25, 25);
 }
 
 
@@ -24,8 +25,9 @@
 }
 body{
     overflow-y: hidden;
-    cursor: grab;
+    cursor: none;
 }
+
 /* Main Screen Styling */
 .intro-page-container{
     position: absolute;
@@ -39,34 +41,36 @@ body{
     background-color: var(--bg-color);
 }
 .links-container{
-    float: right;
-    position: fixed;
-    top: 40%;
-    right: 0%;
-    transform: translateY(-50%);
+    /* float: right; */
+    /* display: flex; */
+    /* position: fixed; */
+    /* top: 40%; */
+    /* right: 0%; */
+    /* transform: translateY(-50%); */
 }
 .links-list{
-    /* display: flex; */
+    display: flex;
     list-style: none;
 }
 .links-list li{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid 1.2px rgb(25, 25, 25);
-    border-radius: 30px;
+    /* border: solid 1.2px rgb(25, 25, 25); */
+    /* border-radius: 30px; */
     margin: 0.5rem;
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
     transition: all 0.15s cubic-bezier(.76,-0.01,.23,1);
 }
 .link{
-    color: rgb(25, 25, 25);
+    color: var(--font-color-black);
     font-family: "Helvetica";
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: lighter;
-    padding: 0rem 0.5rem;
-    cursor: grab;
+    /* padding: 0rem 0.5rem; */
+    cursor: none;
+    text-decoration: underline 1px var(--font-color-black);
 }
 .links-list li:hover{
     background-color: gainsboro;
@@ -75,16 +79,16 @@ body{
 }
     /* BOTTOM CONTAINER */
 .bottom-container {
-    border-top: solid 1px rgb(25, 25, 25);
+    /* border-top: solid 1px rgb(25, 25, 25); */
     height: 50vh;
     width: 100vw;
     background-color: var(--bg-color);
 }
 .projects-view-container{
     position: fixed;
-    bottom: 38%;
+    top: 50%;
     left: 0%;
-    /* transform: translateY(50%); */
+    transform: translateY(-50%);
 }
 .project-views-list{
     /* display: flex; */
@@ -103,27 +107,37 @@ body{
     margin: 0.5rem 0rem;
     padding: 0.5rem 1rem;
     transition: all 1s cubic-bezier(.76,-0.01,.23,1);
-    cursor: grab;
+    cursor: none;
 }
 /* .project-view-index:hover, .project-view-home:hover, .project-view-detail:hover{
     border: solid 1.2px blue;
     color: blue;
 } */
+.bio-container{
+    margin-left: 50vw;
+    width: 50vw;
+}
 .bio-english{
     padding: 0.5rem;
     font-family: "Helvetica";
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: lighter;
+    /* float: right; */
 }
 .bio-korean{
     font-family: 'GothicA1-Light';
     padding: 0.5rem;
     color: rgb(25, 25, 25);
-    float: right;
-    font-size: 1.3rem;
+    /* float: right; */
+    font-size: 1.2rem;
     font-weight: lighter;
 }
-
+.bio-english::selection{
+    background-color: var(--tag-color-4);
+}
+.bio-korean::selection{
+    background-color: var(--tag-color-4);
+}
 /* INDEX PAGE STYLING */
 .index-page-container{
     position: absolute;
@@ -192,6 +206,16 @@ body{
     /* margin-left: 1rem; */
     border-bottom: solid 1px rgb(25, 25, 25);
 }
+.all-project-btn{
+    opacity: 0%;
+    position: absolute;
+    right: 0;
+    margin-right: 5rem;
+    transition: all 1s cubic-bezier(.76,-0.01,.23,1);
+}
+.all-project-btn:hover{
+    text-decoration: line-through;
+}
 /* INDEX PROJECT */
 .index-project-container{
     display: flex;
@@ -207,7 +231,7 @@ body{
     width: 5px;
   }
 .index-projects-box::-webkit-scrollbar-thumb{
-    background-color: grey;
+    background-color: var(--tag-color-4);
 }
 .index-single-project-container{
     display: block;
@@ -259,17 +283,33 @@ body{
     border: solid 1px var(--tag-color-1);
     color: var(--tag-color-1);
 }
+.index-producer:hover{
+    background-color: var(--tag-color-1);
+    color: rgb(25, 25, 25);
+}
 .index-dj{
     border: solid 1px var(--tag-color-2);
     color: var(--tag-color-2);
+}
+.index-dj:hover{
+    background-color: var(--tag-color-2);
+    color: rgb(25, 25, 25);
 }
 .index-designer{
     border: solid 1px var(--tag-color-4);
     color: var(--tag-color-4);
 }
+.index-designer:hover{
+    background-color: var(--tag-color-4);
+    color: rgb(25, 25, 25);
+}
 .index-web{
     border: solid 1px var(--tag-color-3);
     color: var(--tag-color-3);
+}
+.index-web:hover{
+    background-color: var(--tag-color-3);
+    color: rgb(25, 25, 25);
 }
 
 /* DETAIL PAGE DESIGN */
@@ -293,6 +333,12 @@ body{
     height: 85vh;
     overflow-y: scroll;
 }
+.detail-contents-container::-webkit-scrollbar {
+    width: 5px;
+  }
+.detail-contents-container::-webkit-scrollbar-thumb{
+    background-color: var(--bg-color-3);
+}
 .detail-title{
     font-family: "Helvetica";
     font-size: 5rem;
@@ -306,12 +352,17 @@ body{
     width: 80vw;
     border-bottom: solid 1px var(--font-color-white);
 }
+.detail-project-img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .detail-single-project-container{
     display: flex;
     justify-content: space-around;
 }
 .detail-web{
-    border: solid 1px rgb(25, 25, 25);
+    /* border: solid 1px rgb(250, 250, 250); */
     /* border-radius: 30px; */
 }
 .detail-project-logo{
@@ -327,8 +378,8 @@ body{
     height: 28rem;
 }
 .detail-project-img-square{
-    width: 15rem;
-    height: 15rem;
+    width: 25rem;
+    height: 25rem;
 }
 .detail-project-info-container{
     font-family: "Helvetica", 'GothicA1-Light';
@@ -366,7 +417,7 @@ body{
     font-size: 3rem;
     font-weight: lighter;
     color: var(--font-color-white);
-    text-decoration: underline 1.5px var(--font-color-white);
+    text-decoration: underline 1.5px var(--font-color-black);
 }
 .detail-project-title{
     font-size: 1.5rem;
@@ -384,4 +435,27 @@ body{
     color: var(--font-color-white);
     font-size: 0.9rem;
     font-weight: lighter;
+}
+
+/* CURSOR */
+.cursor-container{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+.cursor{
+    width: 20px;
+    height: 20px;
+    border: solid 2px var(--tag-color-4);
+    border-radius: 50%;
+    background-color: var(--tag-color-4);
+    transition: all 0.2s cubic-bezier(.76,-0.01,.23,1);
+    /* animation: rotate_image 2s linear infinite; */
+}
+@keyframes rotate_image{
+    100% {
+        transform: rotate(360deg);
+    }
 }
