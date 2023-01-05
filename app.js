@@ -19,6 +19,8 @@ const bg_container = document.querySelector(".bg-container");
 const change_btn = document.querySelector(".change-btn");
 const project_wrap = document.querySelector(".project-wrap");
 let intro_title = document.querySelector('.intro-title-1')
+let intro_title_2 = document.querySelector('.intro-title-2')
+let intro_title_3 = document.querySelector('.intro-title-3')
 let title_slogans = ["portfolio", "website", ":)"]
 let bg_color = ["rgb(0, 204, 0)", "rgb(255, 51, 51)", "rgb(204, 153, 102)", "rgb(0, 102, 51)", "rgb(255, 255, 0)", "rgb(0, 0, 255)", "rgb(163, 204, 75)", "rgb(255, 132, 201)", "rgb(255, 0, 165)", "rgb(255, 0, 0)", ]
 let view_mode_flag = "home";
@@ -51,13 +53,26 @@ let window_width = window.innerWidth;
 let window_height = window.innerHeight;
 setInterval(function(){
     intro_title_container.style.backgroundColor = `rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)})`;
-    intro_title.innerText = title_slogans[Math.floor(Math.random() * title_slogans.length)];
-    intro_title.style.color = `rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)})`;
+    // intro_title.innerText = title_slogans[Math.floor(Math.random() * title_slogans.length)];
+    let r = Math.floor(Math.random() * 255);
+    let g = Math.floor(Math.random() * 255);
+    let b = Math.floor(Math.random() * 255);
+    intro_title.style.color = "rgb("+r+","+g+","+b+")";
+    intro_title_2.style.color = "rgb("+r+","+g+","+b+")";
+    intro_title_3.style.color = "rgb("+r+","+g+","+b+")";
+    intro_title.style.border = "solid 0.4rem rgb("+r+","+g+","+b+")"
+    intro_title_2.style.border = "solid 0.4rem rgb("+r+","+g+","+b+")"
+    intro_title_3.style.border = "solid 0.4rem rgb("+r+","+g+","+b+")"
     intro_bottom.style.backgroundColor = `rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)})`;
 }, 2000)
 window.addEventListener("mousemove", (e)=>{
-    intro_title_container.style.opacity = `${100/window_width*e.clientX}%`;
+    let title_box_1 = intro_title.getBoundingClientRect();
+    let title_box_2 = intro_title_2.getBoundingClientRect();
+    let title_box_3 = intro_title_3.getBoundingClientRect();
+    // intro top & bottom color change
+    // intro_title_container.style.opacity = `${100/window_width*e.clientX}%`;
     intro_bottom.style.opacity = `${100/window_height*e.clientY}%`
+    // Cursor change
     cursor.style.top = `${e.clientY}px`;
     cursor.style.left = `${e.clientX}px`;
     if(view_mode_flag == "home"){
@@ -106,7 +121,45 @@ window.addEventListener("mousemove", (e)=>{
             cursor_design.style.backgroundColor = "rgb(250, 250, 250)"
         }
     }
+
+    // title angle change
+    let centerX_1 = title_box_1.left + title_box_1.width/2 - window.pageXOffset;
+    let centerY_1 = title_box_1.top + title_box_1.height/2 - window.pageYOffset;
+    let centerX_2 = title_box_2.left + title_box_2.width/2 - window.pageXOffset;
+    let centerY_2 = title_box_2.top + title_box_2.height/2 - window.pageYOffset;
+    let centerX_3 = title_box_3.left + title_box_3.width/2 - window.pageXOffset;
+    let centerY_3 = title_box_3.top + title_box_3.height/2 - window.pageYOffset;
+    let rad_1 = Math.atan2(e.clientX - centerX_1, e.clientY-centerY_1);
+    let rad_2 = Math.atan2(e.clientX - centerX_2, e.clientY-centerY_2);
+    let rad_3 = Math.atan2(e.clientX - centerX_3, e.clientY-centerY_3);
+    var degree_1 = (rad_1 * (180 / Math.PI) * -1) + 180;
+    var degree_2 = (rad_2 * (180 / Math.PI) * -1) + 180;
+    var degree_3 = (rad_3 * (180 / Math.PI) * -1) + 180; 
+
+    intro_title.style.transform = "rotate("+degree_1+"deg)";
+    intro_title_2.style.transform = "rotate("+degree_2+"deg)";
+    intro_title_3.style.transform = "rotate("+degree_3+"deg)";
+
 })
+// top_container.addEventListener("mousemove", (e)=>{
+//     let x_1 = e.clientX*100/window.innerWidth+"%";
+//     let y_1 = e.clientY*150/window.innerHeight+"%";
+//     let x_2 = e.clientX*100/window.innerWidth+"%";
+//     let y_2 = e.clientY*150/window.innerHeight+"%";
+//     let x_3 = e.clientX*100/window.innerWidth+"%";
+//     let y_3 = e.clientY*150/window.innerHeight+"%";
+//     intro_title.style.position = "absolute"
+//     intro_title_2.style.position = "absolute"
+//     intro_title_3.style.position = "absolute"
+
+//     intro_title.style.top = y_1;
+//     intro_title.style.left = x_1;
+//     intro_title_2.style.top = y_2;
+//     intro_title_2.style.left = x_2;
+//     intro_title_3.style.top = y_3;
+//     intro_title_3.style.left = x_3;
+// })
+
 // INTRO PAGE ANIMATION
 window.addEventListener("load", ()=>{
     intro_page.style.top = "0vh";
