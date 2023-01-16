@@ -12,25 +12,36 @@ const project_lists = document.querySelector('.index-projects-box');
 const top_container = document.querySelector(".top-container");
 const bottom_container = document.querySelector(".bottom-container");
 const cursor = document.querySelector('.cursor-container');
-const cursor_design = document.querySelector('.cursor');
+const cursor_design = document.querySelector('.cursor-img');
 const intro_title_container = document.querySelector('.intro-top-bg');
+const intro_top_right_bg = document.querySelector('.intro-top-right-bg');
 const intro_bottom = document.querySelector(".intro-bottom-bg");
+const intro_bottom_right_bg = document.querySelector(".intro-bottom-right-bg");
 const bg_container = document.querySelector(".bg-container");
 const change_btn = document.querySelector(".change-btn");
 const project_wrap = document.querySelector(".project-wrap");
-let intro_title = document.querySelector('.intro-title-1')
-let intro_title_2 = document.querySelector('.intro-title-2')
-let intro_title_3 = document.querySelector('.intro-title-3')
 let title_slogans = ["portfolio", "website", ":)"]
-let bg_color = ["rgb(0, 204, 0)", "rgb(255, 51, 51)", "rgb(204, 153, 102)", "rgb(0, 102, 51)", "rgb(255, 255, 0)", "rgb(0, 0, 255)", "rgb(163, 204, 75)", "rgb(255, 132, 201)", "rgb(255, 0, 165)", "rgb(255, 0, 0)", ]
 let view_mode_flag = "home";
 let project_num = project_lists.children.length;
 
+// INTRO PAGE VAR
+const intro_music_btn = document.querySelector(".intro-project-links-btn");
+const music_container = document.querySelector('.music-container');
+const bio_container = document.querySelector(".bio-container");
+const intro_bio_btn = document.querySelector(".intro-project-bio-btn");
 
-
+// INTRO BIO SHOWUP
+intro_bio_btn.addEventListener("click", ()=>{
+    intro_bio_btn.style.display = 'none'
+    bio_container.style.display = 'block'
+})
+// INTRO MUSIC PLAYER SHOWUP
+intro_music_btn.addEventListener('click', ()=>{
+    intro_music_btn.style.display = 'none';
+    music_container.style.display = 'block'
+})
 // CHANGE THE BG
 change_btn.addEventListener("click", ()=>{
-    intro_title.style.display = "none";
     bg_container.style.zIndex = "100";
     intro_title_container.style.width = "50vw";
     intro_title_container.style.height = "100vh";
@@ -51,46 +62,56 @@ change_btn.addEventListener("click", ()=>{
 // CURSOR ANIMATION
 let window_width = window.innerWidth;
 let window_height = window.innerHeight;
-setInterval(function(){
-    intro_title_container.style.backgroundColor = `rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)})`;
-    // intro_title.innerText = title_slogans[Math.floor(Math.random() * title_slogans.length)];
-    let r = Math.floor(Math.random() * 255);
-    let g = Math.floor(Math.random() * 255);
-    let b = Math.floor(Math.random() * 255);
-    intro_title.style.color = "rgb("+r+","+g+","+b+")";
-    intro_title_2.style.color = "rgb("+r+","+g+","+b+")";
-    intro_title_3.style.color = "rgb("+r+","+g+","+b+")";
-    intro_title.style.border = "solid 0.4rem rgb("+r+","+g+","+b+")"
-    intro_title_2.style.border = "solid 0.4rem rgb("+r+","+g+","+b+")"
-    intro_title_3.style.border = "solid 0.4rem rgb("+r+","+g+","+b+")"
-    intro_bottom.style.backgroundColor = `rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)})`;
-}, 2000)
+// setInterval(function(){
+//     intro_title_container.style.backgroundColor = `rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)})`;
+//     // intro_title.innerText = title_slogans[Math.floor(Math.random() * title_slogans.length)];
+//     let r = Math.floor(Math.random() * 255);
+//     let g = Math.floor(Math.random() * 255);
+//     let b = Math.floor(Math.random() * 255);
+//     intro_bottom.style.backgroundColor = `rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)})`;
+// }, 2000)
+
+window.addEventListener('click', ()=>{
+    randomColorChange(intro_title_container)
+    randomColorChange(intro_top_right_bg)
+    randomColorChange(intro_bottom)
+    randomColorChange(intro_bottom_right_bg)
+});
+function randomColorChange(e){
+    console.log('clicked!')
+    e.style.backgroundColor = `rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)})`;
+}
 window.addEventListener("mousemove", (e)=>{
-    let title_box_1 = intro_title.getBoundingClientRect();
-    let title_box_2 = intro_title_2.getBoundingClientRect();
-    let title_box_3 = intro_title_3.getBoundingClientRect();
     // intro top & bottom color change
     // intro_title_container.style.opacity = `${100/window_width*e.clientX}%`;
-    intro_bottom.style.opacity = `${100/window_height*e.clientY}%`
+    // intro_bottom.style.opacity = `${100/window_height*e.clientY}%`
     // Cursor change
     cursor.style.top = `${e.clientY}px`;
     cursor.style.left = `${e.clientX}px`;
     if(view_mode_flag == "home"){
-        cursor_design.style.border = "solid 1.5px rgb(25, 25, 25)"
-        cursor_design.style.backgroundColor = "rgb(25, 25, 25, 0.2)"
-        if(e.target.classList.contains("project-view-index")||e.target.classList.contains("project-view-home")||e.target.classList.contains("project-view-detail")||e.target.classList.contains("link")){
-            cursor_design.style.width = "100px";
-            cursor_design.style.height = "100px";
-            cursor_design.style.borderRadius = "100%"
-        }else{
-            cursor_design.style.width = "10px";
-            cursor_design.style.height = "10px";
-            cursor_design.style.borderRadius = "0%"
-            cursor_design.style.backgroundColor = "rgb(25, 25, 25)"
+        // cursor_design.style.border = "solid 1.5px rgb(25, 25, 25)"
+        // cursor_design.style.backgroundColor = "rgb(25, 25, 25, 0.2)"
+        if(e.target.classList.contains("intro-project-index-btn")||e.target.classList.contains("intro-project-links-btn")||e.target.classList.contains("intro-project-overview-btn")||e.target.classList.contains("intro-project-bio-btn")||e.target.classList.contains("track-title")){
+            cursor_design.setAttribute('src', 'assets/web_logo/cursor/main_cursor.png')
+            cursor_design.style.animation = "rotate_image 2s linear infinite"
+            cursor_design.style.width = "30px"
+            cursor_design.style.height = "30px"
+        }
+        else if(e.target.classList.contains("link")){
+            cursor_design.setAttribute('src', 'assets/web_logo/cursor/link.png')
+            cursor_design.style.animation = "none"
+            cursor_design.style.width = "30px"
+            cursor_design.style.height = "30px"
+        }
+        else{
+            cursor_design.setAttribute('src', 'assets/web_logo/cursor/esc.png')
+            cursor_design.style.animation = "rotate_image 2s linear infinite"
+            cursor_design.style.width = "20px"
+            cursor_design.style.height = "20px"
         }
     }else if(view_mode_flag == "index"){
         cursor_design.style.border = "solid 1.5px rgb(25, 25, 25)"
-        cursor_design.style.backgroundColor = "rgb(25, 25, 25, 0.2)"
+        // cursor_design.style.backgroundColor = "rgb(25, 25, 25, 0.2)"
         if(e.target.classList.contains("project-view-index")||e.target.classList.contains("project-view-home")||e.target.classList.contains("project-view-detail")||e.target.classList.contains("link")||e.target.classList.contains("all-project-btn")){
             cursor_design.style.width = "100px";
             cursor_design.style.height = "100px";
@@ -99,16 +120,16 @@ window.addEventListener("mousemove", (e)=>{
                 cursor_design.style.width = "100px";
                 cursor_design.style.height = "100px";
                 cursor_design.style.borderRadius = "100%"
-                cursor_design.style.backgroundColor = "rgb(25, 25, 25, 0.2)"
+                // cursor_design.style.backgroundColor = "rgb(25, 25, 25, 0.2)"
             }else{
                 cursor_design.style.width = "10px";
                 cursor_design.style.height = "10px";
                 cursor_design.style.borderRadius = "0%"
-                cursor_design.style.backgroundColor = "rgb(25, 25, 25)"
+                // cursor_design.style.backgroundColor = "rgb(25, 25, 25)"
             }
     }else if(view_mode_flag == "detail"){
         cursor_design.style.border = "solid 1.5px rgb(250, 250, 250)"
-        cursor_design.style.backgroundColor = "rgb(250, 250, 250, 0.2)"
+        // cursor_design.style.backgroundColor = "rgb(250, 250, 250, 0.2)"
         if(e.target.classList.contains("project-view-index")||e.target.classList.contains("project-view-home")||e.target.classList.contains("project-view-detail")||e.target.classList.contains("detail-left-click")||e.target.classList.contains("detail-right-click")){
             cursor_design.style.width = "100px";
             cursor_design.style.height = "100px";
@@ -121,44 +142,7 @@ window.addEventListener("mousemove", (e)=>{
             cursor_design.style.backgroundColor = "rgb(250, 250, 250)"
         }
     }
-
-    // title angle change
-    let centerX_1 = title_box_1.left + title_box_1.width/2 - window.pageXOffset;
-    let centerY_1 = title_box_1.top + title_box_1.height/2 - window.pageYOffset;
-    let centerX_2 = title_box_2.left + title_box_2.width/2 - window.pageXOffset;
-    let centerY_2 = title_box_2.top + title_box_2.height/2 - window.pageYOffset;
-    let centerX_3 = title_box_3.left + title_box_3.width/2 - window.pageXOffset;
-    let centerY_3 = title_box_3.top + title_box_3.height/2 - window.pageYOffset;
-    let rad_1 = Math.atan2(e.clientX - centerX_1, e.clientY-centerY_1);
-    let rad_2 = Math.atan2(e.clientX - centerX_2, e.clientY-centerY_2);
-    let rad_3 = Math.atan2(e.clientX - centerX_3, e.clientY-centerY_3);
-    var degree_1 = (rad_1 * (180 / Math.PI) * -1) + 180;
-    var degree_2 = (rad_2 * (180 / Math.PI) * -1) + 180;
-    var degree_3 = (rad_3 * (180 / Math.PI) * -1) + 180; 
-
-    intro_title.style.transform = "rotate("+degree_1+"deg)";
-    intro_title_2.style.transform = "rotate("+degree_2+"deg)";
-    intro_title_3.style.transform = "rotate("+degree_3+"deg)";
-
 })
-// top_container.addEventListener("mousemove", (e)=>{
-//     let x_1 = e.clientX*100/window.innerWidth+"%";
-//     let y_1 = e.clientY*150/window.innerHeight+"%";
-//     let x_2 = e.clientX*100/window.innerWidth+"%";
-//     let y_2 = e.clientY*150/window.innerHeight+"%";
-//     let x_3 = e.clientX*100/window.innerWidth+"%";
-//     let y_3 = e.clientY*150/window.innerHeight+"%";
-//     intro_title.style.position = "absolute"
-//     intro_title_2.style.position = "absolute"
-//     intro_title_3.style.position = "absolute"
-
-//     intro_title.style.top = y_1;
-//     intro_title.style.left = x_1;
-//     intro_title_2.style.top = y_2;
-//     intro_title_2.style.left = x_2;
-//     intro_title_3.style.top = y_3;
-//     intro_title_3.style.left = x_3;
-// })
 
 // INTRO PAGE ANIMATION
 window.addEventListener("load", ()=>{

@@ -1,0 +1,68 @@
+:root{
+    --bg-color: #f1f1f1;
+    --bg-color-2 : rgb(25, 25, 25);
+    --bg-color-3 : rgb(200, 200, 200);
+    --tag-color-1 : rgb(255, 0, 0);
+    --tag-color-2 : rgb(0, 255, 255);
+    --tag-color-3 : rgb(249, 249, 0);
+    --tag-color-4 : rgb(8, 0, 255);
+    --font-color-white : rgb(250, 250, 250);
+    --font-color-black : rgb(25, 25, 25);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'GothicA1-Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/GothicA1-Light.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+}
+body{
+    overflow-y: hidden;
+    /* cursor: none; */
+}
+/* INDEX title */
+.index-title-container{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+}
+.index-title{
+    font-family: "Helvetica";
+    font-size: 5rem;
+    font-weight: lighter;
+}
+/* INDEX PAGE 2 */
+.index-page-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f1f1f1;
+    z-index: 500;
+
+}
+.index-page-box{
+    /* width: ; */
+}
+.index-tag-container{
+    background-color: aqua;
+    display: inline-block;
+    padding: 0rem 2rem;
+}
+.index-tag-title{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-size: 15rem;
+}
+.index-tag-comp-box{
+    margin-left: 2rem;
+}
+.index-tag-comp{
+    font-family: 'Helvetica';
+    font-weight: lighter;
+    font-size: 1rem;
+}
