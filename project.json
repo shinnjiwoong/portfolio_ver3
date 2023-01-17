@@ -1,0 +1,20 @@
+[
+    {
+        "name" : "MINDCRAFT",
+        "number" : "001",
+        "scope" : "Music",
+        "represent_img" : "assets/projects/MINDCRAFT.png",
+        "detail_source" : "",
+        "link" : "https://soundcloud.com/montikayoti/sets/mindcraft",
+        "description" : ""
+    },
+    {
+        "name" : "DATURA",
+        "number" : "002",
+        "scope" : "Music",
+        "represent_img" : "assets/projects/Datura.png",
+        "detail_source" : "",
+        "link" : "https://www.youtube.com/watch?v=gqTXPMBMY0o",
+        "description" : ""
+    }
+]
