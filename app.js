@@ -6,7 +6,7 @@ const cursor = document.querySelector('.cursor-container');
 const cursor_design = document.querySelector('.cursor-img');
 const bg_container = document.querySelector(".bg-container");
 const project_wrap = document.querySelector(".project-wrap");
-
+const intro_esc_btn = document.querySelectorAll(".intro-esc-btn");
 let view_mode_flag = "home";
 
 // MUSIC PLAYER VAR
@@ -28,6 +28,9 @@ const intro_bottom_right_bg = document.querySelector(".intro-bottom-right-bg");
 
 const music_container = document.querySelector('.music-container');
 const bio_container = document.querySelector(".bio-container");
+
+
+
 // BTNS
 const intro_bio_btn = document.querySelector(".intro-project-bio-btn");
 const intro_work_btn = document.querySelector(".intro-project-overview-btn");
@@ -60,31 +63,49 @@ function hideMusicBar(){
     music_bar_container.style.bottom = "-10%";
 }
 
-// INTRO BIO SHOWUP
+// INTRO SCREEN CHANGE ANIMATION
 intro_bio_btn.addEventListener("click", ()=>{
     intro_bio_btn.style.display = 'none'
     bio_container.style.display = 'block'
 })
-// INTRO MUSIC PLAYER SHOWUP
+
 intro_music_btn.addEventListener('click', ()=>{
     intro_music_btn.style.display = 'none';
     music_container.style.display = 'block'
 })
 
+intro_esc_btn.forEach((e)=>{
+    e.addEventListener('click', ()=>{
+        if(e.classList.contains("third")){
+            music_container.style.display = "none"
+            intro_music_btn.style.display = "block"
+        }else if(e.classList.contains("fourth")){
+            intro_bio_btn.style.display = "block";
+            bio_container.style.display = "none";
+        }
+    })
+})
 // WORK & TIMELINE BTN CLICK TRANSITION
 function hideIntroContents(){
     window.removeEventListener('click', handleWindowClick);
-    intro_title_container.style.backgroundColor = "rgb(255, 255, 255)"
-    intro_top_right_bg.style.backgroundColor = "rgb(200, 200, 200)";
-    intro_bottom.style.backgroundColor = "rgb(200, 200, 200)";
-    intro_bottom_right_bg.style.backgroundColor = "rgb(255, 255, 255)";
-    top_container.style.opacity = "0%"
-    bottom_container.style.opacity = "0%";
-
+    view_mode_flag = "project"
+    setTimeout(handleWindowClick, 200);
+    setTimeout(handleWindowClick, 400);
+    setTimeout(handleWindowClick, 600);
+    setTimeout(function(){
+        intro_title_container.style.backgroundColor = "rgb(200, 200, 200)"
+        intro_top_right_bg.style.backgroundColor = "rgb(200, 200, 200)";
+        intro_bottom.style.backgroundColor = "rgb(200, 200, 200)";
+        intro_bottom_right_bg.style.backgroundColor = "rgb(200, 200, 200)";
+        top_container.style.opacity = "0%"
+        bottom_container.style.opacity = "0%";
+        window.addEventListener('click', handleWindowClick);
+    }, 800);
     setTimeout(function(){
         top_container.style.display = "none";
         bottom_container.style.display = "none";
-    }, 1000)
+        project_page_container.style.display = "block"
+    }, 1500)
 }
 
 intro_work_btn.addEventListener('click', hideIntroContents);
@@ -102,14 +123,13 @@ function handleWindowClick(){
     randomColorChange(intro_bottom_right_bg)
 }
 function randomColorChange(e){
-    console.log('clicked!')
     e.style.backgroundColor = `rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)})`;
 }
 window.addEventListener("mousemove", (e)=>{
     // Cursor change
     cursor.style.top = `${e.clientY}px`;
     cursor.style.left = `${e.clientX}px`;
-    console.log(window.innerHeight, e.clientY)
+    // console.log(window.innerHeight, e.clientY)
 
     // 커서의 위치에 기반하여 음악 플레이어를 보여주는 함수
     if(window.innerHeight - e.clientY < 30){
