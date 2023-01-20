@@ -85,10 +85,27 @@ intro_esc_btn.forEach((e)=>{
         }
     })
 })
+
+// CHANGE STATUS
+
+async function changeStatus(stat){
+    view_mode_flag = stat;
+}
+
+async function getStatus(){
+    return view_mode_flag;
+}
+
+window.onload = async ()=>{
+    changeStatus("home")
+    // console.log(view_mode_flag);
+};
+
 // WORK & TIMELINE BTN CLICK TRANSITION
-function hideIntroContents(){
+async function hideIntroContents(){
     window.removeEventListener('click', handleWindowClick);
-    view_mode_flag = "project"
+    await changeStatus("project");
+
     setTimeout(handleWindowClick, 200);
     setTimeout(handleWindowClick, 400);
     setTimeout(handleWindowClick, 600);
@@ -125,7 +142,13 @@ function handleWindowClick(){
 function randomColorChange(e){
     e.style.backgroundColor = `rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)})`;
 }
-window.addEventListener("mousemove", (e)=>{
+window.addEventListener("mousemove", async (e)=>{
+    let stat = await getStatus();
+    let rect_1 = sec_1.getBoundingClientRect();
+    let rect_2 = sec_2.getBoundingClientRect();
+    let rect_3 = sec_3.getBoundingClientRect();
+    let rect_4 = sec_4.getBoundingClientRect();
+    // console.log(stat);
     // Cursor change
     cursor.style.top = `${e.clientY}px`;
     cursor.style.left = `${e.clientX}px`;
@@ -139,16 +162,10 @@ window.addEventListener("mousemove", (e)=>{
     }
 
     // 요소에 따른 커서의 모양변화
-    if(view_mode_flag == "home"){
+    if(stat == "home"){
         // cursor_design.style.border = "solid 1.5px rgb(25, 25, 25)"
         // cursor_design.style.backgroundColor = "rgb(25, 25, 25, 0.2)"
-        if(e.target.classList.contains("intro-project-timeline-btn")||e.target.classList.contains("intro-project-links-btn")||e.target.classList.contains("intro-project-overview-btn")||e.target.classList.contains("intro-project-bio-btn")||e.target.classList.contains("track-title")){
-            cursor_design.setAttribute('src', 'assets/web_logo/cursor/main_cursor.png')
-            cursor_design.style.animation = "rotate_image 1s linear infinite"
-            cursor_design.style.width = "60px"
-            cursor_design.style.height = "60px"
-        }
-        else if(e.target.classList.contains("link")){
+        if(e.target.classList.contains("link")){
             cursor_design.setAttribute('src', 'assets/web_logo/cursor/link.png')
             cursor_design.style.animation = "none"
             cursor_design.style.width = "40px"
@@ -158,26 +175,26 @@ window.addEventListener("mousemove", (e)=>{
             if(playpause_flag == "play"){
                 cursor_design.setAttribute('src', 'assets/web_logo/cursor/pause.png')
                 cursor_design.style.animation = "none"
-                cursor_design.style.width = "60px"
-                cursor_design.style.height = "60px"
+                cursor_design.style.width = "50px"
+                cursor_design.style.height = "50px"
             }else if(playpause_flag == "pause"){
                 cursor_design.setAttribute('src', 'assets/web_logo/cursor/play.png')
                 cursor_design.style.animation = "none"
-                cursor_design.style.width = "60px"
-                cursor_design.style.height = "60px"
+                cursor_design.style.width = "50px"
+                cursor_design.style.height = "50px"
             }
         }
         else if(e.target.classList.contains("music-bar-prev-btn")){
             cursor_design.setAttribute('src', 'assets/web_logo/cursor/arrow_l.png')
             cursor_design.style.animation = "none"
-            cursor_design.style.width = "70px"
-            cursor_design.style.height = "70px"
+            cursor_design.style.width = "60px"
+            cursor_design.style.height = "60px"
         }
         else if(e.target.classList.contains("music-bar-next-btn")){
             cursor_design.setAttribute('src', 'assets/web_logo/cursor/arrow_r.png')
             cursor_design.style.animation = "none"
-            cursor_design.style.width = "70px"
-            cursor_design.style.height = "70px"
+            cursor_design.style.width = "60px"
+            cursor_design.style.height = "60px"
         }
         else{
             cursor_design.setAttribute('src', 'assets/web_logo/cursor/esc.png')
@@ -185,5 +202,75 @@ window.addEventListener("mousemove", (e)=>{
             cursor_design.style.width = "20px"
             cursor_design.style.height = "20px"
         }
+    }
+    else if(stat == "project"){
+        if(e.clientX<40){
+            project_page_container.style.cursor = "none"
+            cursor_design.style.opacity = "100%"
+            left_loading_bar.style.opacity = "100%"
+            cursor_design.setAttribute('src', 'assets/web_logo/cursor/arrow_l.png')
+            cursor_design.style.animation = "none"
+            cursor_design.style.width = "40px"
+            cursor_design.style.height = "40px"
+        }
+        else if(window.innerWidth - e.clientX < 40){
+            project_page_container.style.cursor = "none"
+            cursor_design.style.opacity = "100%"
+            right_loading_bar.style.opacity = "100%"
+            cursor_design.setAttribute('src', 'assets/web_logo/cursor/arrow_r.png')
+            cursor_design.style.animation = "none"
+            cursor_design.style.width = "40px"
+            cursor_design.style.height = "40px"
+        }else{
+            cursor_design.style.opacity = "0%"
+            project_page_container.style.cursor = "grab"
+        }
+        // else if(e.target.classList.contains("project-img")){
+        //     if(e.clientX < rect_1.width/3 || e.clientX < rect_2.width/3 || e.clientX < rect_3.width/3 || e.clientX < rect_4.width/3){
+        //         left_loading_bar.style.opacity = "0%"
+        //         right_loading_bar.style.opacity = "0%"
+        //         cursor_design.setAttribute('src', 'assets/web_logo/cursor/arrow_l.png')
+        //         cursor_design.style.animation = "none"
+        //         cursor_design.style.width = "40px"
+        //         cursor_design.style.height = "40px"
+        //     }else if(e.clientX > rect_1.width*2/3 || e.clientX > rect_2.width*2/3 || e.clientX > rect_3.width*2/3 || e.clientX > rect_4.width*2/3){
+        //         left_loading_bar.style.opacity = "0%"
+        //         right_loading_bar.style.opacity = "0%"
+        //         cursor_design.setAttribute('src', 'assets/web_logo/cursor/arrow_r.png')
+        //         cursor_design.style.animation = "none"
+        //         cursor_design.style.width = "40px"
+        //         cursor_design.style.height = "40px"
+        //     }else{
+        //         left_loading_bar.style.opacity = "0%"
+        //         right_loading_bar.style.opacity = "0%"
+        //         cursor_design.setAttribute('src', 'assets/web_logo/cursor/main_cursor.png')
+        //         cursor_design.style.animation = "none"
+        //         cursor_design.style.width = "30px"
+        //         cursor_design.style.height = "30px"
+        //     }
+        // }
+        // else if(e.target.classList.contains("project-back-container") || e.target.parentNode.classList.contains("project-back-container")){
+        //     if(e.target.classList.contains("project-link")){
+        //         console.log("hover")
+        //         cursor_design.setAttribute('src', 'assets/web_logo/cursor/link.png')
+        //         cursor_design.style.width = "20px"
+        //         cursor_design.style.height = "20px"
+        //     }else{
+        //         left_loading_bar.style.opacity = "0%"
+        //         right_loading_bar.style.opacity = "0%"
+        //         cursor_design.setAttribute('src', 'assets/web_logo/cursor/esc.png')
+        //         cursor_design.style.animation = "rotate_image 2s linear infinite"
+        //         cursor_design.style.width = "20px"
+        //         cursor_design.style.height = "20px"
+        //     }
+        // }
+        // else{
+        //     left_loading_bar.style.opacity = "0%"
+        //     right_loading_bar.style.opacity = "0%"
+        //     cursor_design.setAttribute('src', 'assets/web_logo/cursor/esc.png')
+        //     cursor_design.style.animation = "rotate_image 2s linear infinite"
+        //     cursor_design.style.width = "20px"
+        //     cursor_design.style.height = "20px"
+        // }
     }
 })

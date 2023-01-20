@@ -18,6 +18,30 @@
     box-sizing: border-box;
 }
 @font-face {
+    font-family: 'NEXON Lv2 Gothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'YESGothic-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/YESGothic-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LeferiPoint-WhiteObliqueA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteObliqueA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
     font-family: 'GothicA1-Light';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/GothicA1-Light.woff2') format('woff2');
     font-weight: 100;
@@ -82,7 +106,7 @@ body{
     align-items: center;
 }
 .intro-project-overview-btn, .intro-project-timeline-btn{
-    font-family: "Helvetica", 'GothicA1-Light';
+    font-family: 'LeferiPoint-WhiteObliqueA';
     font-weight: lighter;
     font-size: 1.3rem;
 }
@@ -108,7 +132,7 @@ body{
     align-items: center;
 }
 .intro-project-links-btn, .intro-project-bio-btn{
-    font-family: "Helvetica", 'GothicA1-Light';
+    font-family: 'LeferiPoint-WhiteObliqueA';
     font-weight: lighter;
     font-size: 1.3rem;
 }
@@ -125,9 +149,9 @@ body{
     padding: 0.5rem 0rem;
 }
 .music-description{
-    font-family: "Helvetica", 'GothicA1-Light';
+    font-family: 'LeferiPoint-WhiteObliqueA';
     font-weight: lighter;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 .music-title-container{
     border-bottom: 1px solid rgb(25, 25, 25);
@@ -138,11 +162,14 @@ body{
 }
 
 .music-title{
-    font-family: "Helvetica", 'GothicA1-Light';
-    font-weight: lighter;
-    font-size: 1.7rem;
-    background-color: black;
-    color: white;
+    font-family: 'LeferiPoint-WhiteObliqueA';
+    /* font-weight: lighter; */
+    font-size: 1.5rem;
+    /* background-color: ; */
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    color: black;
     
 }
 .tracklist{
@@ -158,14 +185,14 @@ body{
     width: 100%;
 }
 .track-title{
-    font-family: "Helvetica", 'GothicA1-Light';
+    font-family: 'LeferiPoint-WhiteObliqueA';
     font-weight: lighter;
     font-size: 1.3rem;
     padding: 0.2rem 0.5rem;
     width: 20rem;
 }
 .track-time{
-    font-family: "Helvetica", 'GothicA1-Light';
+    font-family: 'LeferiPoint-WhiteObliqueA';
     font-weight: lighter;
     font-size: 1.3rem;
     padding: 0.2rem 0.5rem;
@@ -211,18 +238,18 @@ body{
 }
 .bio-english{
     padding: 0.5rem;
-    font-family: "Helvetica";
+    font-family: 'LeferiPoint-WhiteObliqueA';
     font-size: 1.1rem;
     font-weight: lighter;
     /* float: right; */
 }
 .bio-korean{
-    font-family: 'GothicA1-Light';
+    font-family: 'LeferiPoint-WhiteObliqueA';
     padding: 0.5rem;
     /* color: rgb(25, 25, 25); */
     /* float: right; */
     font-size: 1.1rem;
-    font-weight: lighter;
+    font-weight: 300;
 }
 .bio-english::selection{
     background-color: var(--bg-color);
@@ -232,6 +259,11 @@ body{
 }
 .underlined{
     text-decoration: 1px underline;
+}
+hr{
+    height: 1px;
+    background-color: rgb(25, 25, 25);
+    border: none;
 }
 
 /* BACKGROUNDS */
@@ -299,6 +331,9 @@ body{
     transition-duration: 0.3s;
     transition-timing-function: cubic-bezier(.76,-0.01,.23,1);
 }
+.links-container{
+    display: none;
+}
 .links-list{
     display: flex;
     list-style: none;
@@ -315,7 +350,7 @@ body{
 }
 .link{
     color: var(--font-color-black);
-    font-family: "Helvetica";
+    font-family: 'LeferiPoint-WhiteObliqueA';
     text-decoration: none;
     font-size: 1rem;
     font-weight: lighter;
@@ -377,7 +412,7 @@ body{
     /* border-right: 1px solid ; */
 }
 .music-bar-track-title{
-    font-family: "Helvetica";
+    font-family: 'LeferiPoint-WhiteObliqueA';
     font-size: 1.2rem;
     font-weight: lighter;
     padding: 0.1rem 0.5rem;
@@ -387,7 +422,7 @@ body{
 }
 
 .music-bar-prev-btn, .music-bar-playpause-btn, .music-bar-next-btn{
-    font-family: "Helvetica";
+    font-family: 'LeferiPoint-WhiteObliqueA';
     font-size: 1.2rem;
     font-weight: lighter;
     padding: 0.1rem 2rem;
@@ -406,6 +441,7 @@ body{
     width: 100vw;
     height: 100vh;
     display: none;
+    cursor: grab;
 }
 
 .top-sections-container{
@@ -436,14 +472,45 @@ body{
     height: 100%;
     display: flex;
     justify-content: center;
+    position: relative;
     align-items: center;
     transition: all 0.3s cubic-bezier(.76,-0.01,.23,1);
 }
-.project-img{
-    width: 90%;
-    height: 90%;
-    object-fit: contain;
+
+.project-cursor-left{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    z-index: 100;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+    margin-left: 2rem;
 }
+.project-cursor-right{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    z-index: 100;
+    margin-right: 2rem;
+    top: 50%;
+    right: 0%;
+    transform: translateY(-50%);
+}
+.project-cursor-left:hover, .project-cursor-right:hover{
+    width: 50px;
+    height: 50px;
+}
+.project-img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    filter: grayscale(0%);
+    transition: all 0.3s cubic-bezier(.76,-0.01,.23,1);
+}
+/* .project-img:hover{
+    filter: grayscale(0%);
+} */
 
 .project-back-container{
     opacity: 0%;
@@ -510,8 +577,19 @@ body{
     justify-content: center;
 }
 .project-title{
-    font-family: "Helvetica";
+    font-family: 'LeferiPoint-WhiteObliqueA';
     font-size: 1.4rem;
+    font-weight: lighter;
+}
+.project-index-container{
+    width: 100%;
+    /* padding: 2rem 0rem; */
+    display: flex;
+    justify-content: center;
+}
+.project-index{
+    font-family: 'LeferiPoint-WhiteObliqueA';
+    font-size: 1rem;
     font-weight: lighter;
 }
 .project-desc-container{
@@ -519,18 +597,21 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    
 }
 .project-desc-kr{
-    font-family: 'GothicA1-Light';
-    font-size: 1.2rem;
+    font-family: 'LeferiPoint-WhiteObliqueA';
+    font-size: 1rem;
     font-weight: lighter;
     padding: 1rem 0rem;
+    width: 85%;
 }
 .project-desc-en{
-    font-family: "Helvetica";
-    font-size: 1.2rem;
+    font-family: 'LeferiPoint-WhiteObliqueA';
+    font-size: 1rem;
     font-weight: lighter;
     padding: 1rem 0rem;
+    width: 85%;
 }
 .project-link-container{
     display: flex;
@@ -538,15 +619,38 @@ body{
     align-items: center;
 }
 .project-link{
-    font-family: "Helvetica";
-    font-size: 1rem;
+    font-family: 'LeferiPoint-WhiteObliqueA';
+    font-size: 1.1rem;
     font-weight: lighter;
     padding: 1rem 0rem;
     cursor: none;
+    z-index: 50;
     text-decoration: 1px underline;
     color: black;
 }
+.project-scope-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* background-color: #f1f1f1; */
+}
+.project-scope{
+    font-family: 'LeferiPoint-WhiteObliqueA';
+    font-size: 1rem;
+    font-weight: lighter;
+    padding: 0.4rem 0.5rem;
+    margin: 0rem 0.1rem;
+}
 
+.project-page-number{
+    font-family: 'LeferiPoint-WhiteObliqueA';
+    font-size: 1rem;
+    position: fixed;
+    margin-bottom: 1rem;
+    left: 50%;
+    bottom: 0%;
+    transform: translateX(-50%);
+}
 /* LOADING BAR */
 .projects-loading-bar-container{
     position: absolute;
@@ -555,6 +659,7 @@ body{
     top: 0;
     left: 0;
     pointer-events: none;
+    display: none;
 }
 
 .left-loading-bar{
@@ -593,7 +698,7 @@ body{
     /* border: 1px solid; */
     padding: 0.5rem;
     background-color: grey;
-    display: flex;
+    display: none;
     justify-content: space-between;
     opacity: 20%;
     transform: translateY(-70%);
