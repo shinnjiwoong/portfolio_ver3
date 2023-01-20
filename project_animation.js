@@ -4,7 +4,8 @@ let mindcraft = {
     "year" : "2019",
     "scope" : ["music"],
     "represent_source" : ["assets/project_source/mindcraft_1.png", "assets/project_source/mindcraft_2.png"],
-    "link" : "https://soundcloud.com/montikayoti/sets/mindcraft",
+    "video" : ['false'],
+    "link" : ["https://soundcloud.com/montikayoti/sets/mindcraft", 'soundcloud'],
     "description_kr" : "MINDCRAFT는 혼란스러운 시기에서 마음을 재정비하며 제작한 6곡의 트랙을 담은 앨범이다. 얼떨결에 프로듀서로서 제대로 된 시작을 알린 작업이 되었다.  ",
     "description_en" : "MINDCRAFT is an album with 6 musical pieces. "
 }
@@ -13,7 +14,8 @@ let datura = {
     "project_num" : "002",
     "year" : "2019",
     "scope" : ["music"],
-    "represent_source" : ["assets/projects/Datura.png"],
+    "represent_source" : ["assets/project_source/datura_1.png", "assets/project_source/datura_2.png", "assets/project_source/datura_3.png"],
+    "video" : ['false'],
     "link" : "",
     "description_kr" : "대안공간 루프 갤러리의 2021년 전시 ＜SIMPLE THOUGHTS: ECOLOGY-GENDER-COMMUNISM | 간결한 생각들: 생태-젠더-공산＞에 참여했다. 전시의 일부로써 시민들이 직접 갤러리의 근방을 걸으며 경험하는 과정.",
     "description_en" : "MINDCRAFT is an album with 6 musical pieces. "
@@ -23,7 +25,8 @@ let postcorona = {
     "project_num" : "003",
     "year" : "2020",
     "scope" : ["music"],
-    "represent_source" : ["assets/projects/POSTCORONA.png"],
+    "represent_source" : ["assets/project_source/postcorona_1.png", "assets/project_source/postcorona_2.png", "assets/project_source/postcorona_3.png"],
+    "video" : ['false'],
     "link" : "",
     "description_kr" : "대안공간 루프 갤러리의 2021년 전시 ＜SIMPLE THOUGHTS: ECOLOGY-GENDER-COMMUNISM | 간결한 생각들: 생태-젠더-공산＞에 참여했다. 전시의 일부로써 시민들이 직접 갤러리의 근방을 걸으며 경험하는 과정.",
     "description_en" : "MINDCRAFT is an album with 6 musical pieces. "
@@ -33,7 +36,8 @@ let rem = {
     "project_num" : "004",
     "year" : "2021",
     "scope" : ["music"],
-    "represent_source" : ["assets/projects/REM.png"],
+    "represent_source" : ["assets/project_source/rem_1.png", "assets/project_source/rem_2.png", "assets/project_source/rem_3.png"],
+    "video" : ['false'],
     "link" : "",
     "description_kr" : "대안공간 루프 갤러리의 2021년 전시 ＜SIMPLE THOUGHTS: ECOLOGY-GENDER-COMMUNISM | 간결한 생각들: 생태-젠더-공산＞에 참여했다. 전시의 일부로써 시민들이 직접 갤러리의 근방을 걸으며 경험하는 과정.",
     "description_en" : "MINDCRAFT is an album with 6 musical pieces. "
@@ -44,6 +48,7 @@ let artificial_object = {
     "year" : "2021",
     "scope" : ["music"],
     "represent_source" : ["assets/project_source/ao_2.png", "assets/project_source/ao_1.png"],
+    "video" : ['false'],
     "link" : "",
     "description_kr" : "ARTIFICIAL OBJECT는 JGP$의 첫 정규앨범입니다. 전곡을 프로듀싱하였습니다. ",
     "description_en" : "MINDCRAFT is an album with 6 musical pieces. "
@@ -54,6 +59,7 @@ let altgal_simple = {
     "year" : "2021",
     "scope" : ["music"],
     "represent_source" : ["assets/project_source/simple_thought_1.png"],
+    "video" : ['false'],
     "link" : "",
     "description_kr" : "대안공간 루프 갤러리의 2021년 전시 ＜SIMPLE THOUGHTS: ECOLOGY-GENDER-COMMUNISM | 간결한 생각들: 생태-젠더-공산＞에 참여했다. 전시의 일부로써 시민들이 직접 갤러리의 근방을 걸으며 경험하는 과정.",
     "description_en" : "MINDCRAFT is an album with 6 musical pieces. "
@@ -63,7 +69,8 @@ let kasina_kaffe = {
     "project_num" : "007",
     "year" : "2022",
     "scope" : ["music"],
-    "represent_source" : ["assets/projects/Kasina_Kaffe.png"],
+    "represent_source" : ["assets/project_source/kaffe_1.png", "assets/project_source/kaffe_2.png", "assets/project_source/kaffe_3.png", "assets/project_source/kaffe_4.png"],
+    "video" : ['false'],
     "link" : "",
     "description_kr" : "대안공간 루프 갤러리의 2021년 전시 ＜SIMPLE THOUGHTS: ECOLOGY-GENDER-COMMUNISM | 간결한 생각들: 생태-젠더-공산＞에 참여했다. 전시의 일부로써 시민들이 직접 갤러리의 근방을 걸으며 경험하는 과정.",
     "description_en" : "MINDCRAFT is an album with 6 musical pieces. "
@@ -72,8 +79,9 @@ let umm_1 = {
     "name" : "꽃내음 vol.1 | UMM vol.1",
     "project_num" : "008",
     "year" : "2022",
-    "scope" : ["music", "design"],
-    "represent_source" : ["assets/projects/꽃내음.png"],
+    "scope" : ["mixset", "design"],
+    "represent_source" : ["assets/project_source/umm_vol1_1.png", "assets/project_source/umm_vol1_2.png"],
+    "video" : ['false'],
     "link" : "",
     "description_kr" : "대안공간 루프 갤러리의 2021년 전시 ＜SIMPLE THOUGHTS: ECOLOGY-GENDER-COMMUNISM | 간결한 생각들: 생태-젠더-공산＞에 참여했다. 전시의 일부로써 시민들이 직접 갤러리의 근방을 걸으며 경험하는 과정.",
     "description_en" : "MINDCRAFT is an album with 6 musical pieces. "
@@ -84,6 +92,7 @@ let kasina_seongsu = {
     "year" : "2022",
     "scope" : ["music"],
     "represent_source" : ["assets/projects/꽃내음.png"],
+    "video" : ['true', "assets/project_videos/kasina_seongsu.mp4"],
     "link" : "",
     "description_kr" : "대안공간 루프 갤러리의 2021년 전시 ＜SIMPLE THOUGHTS: ECOLOGY-GENDER-COMMUNISM | 간결한 생각들: 생태-젠더-공산＞에 참여했다. 전시의 일부로써 시민들이 직접 갤러리의 근방을 걸으며 경험하는 과정.",
     "description_en" : "MINDCRAFT is an album with 6 musical pieces. "
@@ -93,7 +102,8 @@ let onerm = {
     "project_num" : "010",
     "year" : "2022",
     "scope" : ["music"],
-    "represent_source" : ["assets/project_source/onerm_2.png", "assets/project_source/onerm_3.png"],
+    "represent_source" : ["assets/project_source/onerm_1.png", "assets/project_source/onerm_2.png", "assets/project_source/onerm_3.png"],
+    "video" : ['true', "assets/project_videos/onerm.mp4"],
     "link" : "",
     "description_kr" : "ARTIFICIAL OBJECT는 JGP$의 첫 정규앨범입니다. 전곡을 프로듀싱하였습니다. ",
     "description_en" : "MINDCRAFT is an album with 6 musical pieces. "
@@ -103,7 +113,8 @@ let hyndai_casper = {
     "project_num" : "011",
     "year" : "2022",
     "scope" : ["music"],
-    "represent_source" : ["assets/projects/CASPER_KASINA.png"],
+    "represent_source" : ["assets/project_source/casper_kasina_1.png", "assets/project_source/casper_kasina_2.png", "assets/project_source/casper_kasina_3.png"],
+    "video" : ['true', "assets/project_videos/casper_kasina.mp4"],
     "link" : "",
     "description_kr" : "대안공간 루프 갤러리의 2021년 전시 ＜SIMPLE THOUGHTS: ECOLOGY-GENDER-COMMUNISM | 간결한 생각들: 생태-젠더-공산＞에 참여했다. 전시의 일부로써 시민들이 직접 갤러리의 근방을 걸으며 경험하는 과정.",
     "description_en" : "MINDCRAFT is an album with 6 musical pieces. "
@@ -113,7 +124,8 @@ let reservoir_dogs = {
     "project_num" : "012",
     "year" : "2022",
     "scope" : ["mixset", "design"],
-    "represent_source" : ["assets/projects/RESERVOIR_DOGS.png"],
+    "represent_source" : ["assets/project_source/reservoir_dogs_1.png", "assets/project_source/reservoir_dogs_2.png", "assets/project_source/reservoir_dogs_3.png"],
+    "video" : ['false'],
     "link" : "",
     "description_kr" : "대안공간 루프 갤러리의 2021년 전시 ＜SIMPLE THOUGHTS: ECOLOGY-GENDER-COMMUNISM | 간결한 생각들: 생태-젠더-공산＞에 참여했다. 전시의 일부로써 시민들이 직접 갤러리의 근방을 걸으며 경험하는 과정.",
     "description_en" : "MINDCRAFT is an album with 6 musical pieces. "
@@ -194,6 +206,29 @@ async function getCursor(x, y){
     }
     return [x, y]
 }
+async function hideProject(front, back){
+    front.style.opacity = "0%";
+    back.style.opacity = "0%";
+}
+async function showFront(front, back){
+    front.style.display = "inline-block";
+    back.style.display = "none";
+    setTimeout(function(){
+        front.style.opacity = "100%";
+    }, 500)
+    
+}
+async function showBack(front, back){
+    front.style.display = "none";
+    back.style.display = "inline-block";
+    back.style.opacity = "100%";
+}
+async function hideSource(img){
+    img.style.opacity = "0%"
+}
+async function showSource(img){
+    img.style.opacity = "100%"
+}
 async function showProject(e,p){
 
     const project_front_container = e.querySelector(".project-front-container")
@@ -210,71 +245,128 @@ async function showProject(e,p){
     const img_len = p.represent_source.length;
     const project_scope_len = p.scope.length;
     const project_index = project_back_container.querySelector(".project-index-container .project-index");
+    const project_vid = project_front_container.querySelector(".project-vid");
 
     let rect = e.getBoundingClientRect();
     let i = 0;
+    // project_img.src = "";
 
-    project_img.src = p.represent_source[i];
-    project_title.innerText = p.name;
-    project_index.innerText = `${p.project_num} - ${p.year}`
-    project_desc_kr.innerText = p.description_kr;
-    project_desc_en.innerText = p.description_en;
-    project_link.href = p.link
-    for(let i = 0; i < project_scope_len; i++){
-        let scope_node = document.createElement('p');
-        scope_node.classList.add('project-scope');
-        if(p.scope[i] == "music"){
-            scope_node.style.color = scope_music_color;
-            // scope_node.style.border = `1px solid ${scope_music_color}`
-        }else if(p.scope[i] == "programming"){
-            scope_node.style.color = scope_programming_color;
-            // scope_node.style.border = `1px solid ${scope_programming_color}`
-        }else if(p.scope[i] == "mixset"){
-            scope_node.style.color = scope_mixset_color;
-            // scope_node.style.border = `1px solid ${scope_mixset_color}`
-        }else if(p.scope[i] == "design"){
-            scope_node.style.color = scope_design_color;
-            // scope_node.style.border = `1px solid ${scope_design_color}`
+    await hideProject(project_front_container, project_back_container);
+    setTimeout(function(){
+        project_img.src = p.represent_source[0];
+        project_title.innerText = p.name;
+        project_index.innerText = `${p.project_num} - ${p.year}`
+        project_desc_kr.innerText = p.description_kr;
+        project_desc_en.innerText = p.description_en;
+        project_link.href = p.link
+        project_scope_container.innerHTML = "";
+        if(p.video[0] == "false"){
+            project_vid.style.display = "none";
+            project_vid.src = "";
+        }else if(p.video[0] == "true"){
+            project_vid.src = p.video[1];
+            project_vid.style.display = "inline-block";
         }
-        scope_node.style.borderRadius = '30px'
-        scope_node.style.fontWeight = "lighter";
-        scope_node.innerText = p.scope[i]
-        project_scope_container.appendChild(scope_node);
-    }
-    project_img.addEventListener("load", ()=>{
-        project_front_container.style.opacity = "100%"
-        project_back_container.style.opacity = "100%"
+        for(let i = 0; i < project_scope_len; i++){
+            let scope_node = document.createElement('p');
+            scope_node.classList.add('project-scope');
+            if(p.scope[i] == "music"){
+                scope_node.style.color = scope_music_color;
+                // scope_node.style.border = `1px solid ${scope_music_color}`
+            }else if(p.scope[i] == "programming"){
+                scope_node.style.color = scope_programming_color;
+                // scope_node.style.border = `1px solid ${scope_programming_color}`
+            }else if(p.scope[i] == "mixset"){
+                scope_node.style.color = scope_mixset_color;
+                // scope_node.style.border = `1px solid ${scope_mixset_color}`
+            }else if(p.scope[i] == "design"){
+                scope_node.style.color = scope_design_color;
+                // scope_node.style.border = `1px solid ${scope_design_color}`
+            }
+            scope_node.style.borderRadius = '30px'
+            scope_node.style.fontWeight = "lighter";
+            scope_node.innerText = p.scope[i]
+            project_scope_container.appendChild(scope_node);
+        }
+    }, 500)
+    
+    project_img.addEventListener("load", async ()=>{
+        await showFront(project_front_container, project_back_container)
     })
+
     project_img.addEventListener("click", async (e)=>{
         
         let rect_width = rect.width;
         let rect_height = rect.height;
         let cursorPoint = await getCursor(e.clientX, e.clientY);
-
-        project_front_container.style.display = "none"
-        project_back_container.style.display = "block"
+        if(e.clientX>40 && e.clientX<window.innerWidth-40){
+            await showBack(project_front_container, project_back_container);
+        }
+        
     })
-    project_arrow_l.addEventListener('click', ()=>{
-        if(i == img_len - 1){
-            i = 0;
-            project_img.src = p.represent_source[i];
-        }else{
-            i++;
-            project_img.src = p.represent_source[i];
+    project_vid.addEventListener("click", async (e)=>{
+        if(e.clientX>40 && e.clientX<window.innerWidth-40){
+            await showBack(project_front_container, project_back_container);
         }
     })
-    project_arrow_r.addEventListener('click', ()=>{
-        if(i == img_len - 1){
-            i = 0;
-            project_img.src = p.represent_source[i];
-        }else{
-            i++;
-            project_img.src = p.represent_source[i];
-        }
+    project_arrow_l.addEventListener('click', async ()=>{
+        await hideProject(project_front_container, project_back_container);
+        setTimeout(function(){
+            project_img.src = "";
+            if(p.video[0] == "false"){
+                project_vid.style.display = "none";
+                project_vid.src = "";
+                if(i == img_len - 1){
+                    i = 0;
+                    project_img.src = p.represent_source[i];
+                }else{
+                    i++;
+                    project_img.src = p.represent_source[i];
+                }
+            }else if(p.video[0] == "true"){
+                if(i >= img_len){
+                    project_vid.src = p.video[1];
+                    project_vid.style.display = "inline-block";
+                    i = 0;
+                }else{
+                    project_vid.style.display = "none";
+                    project_img.src = p.represent_source[i];
+                    i++;
+                }
+            }
+        }, 500)
+        await showFront(project_front_container, project_back_container);
     })
-    project_esc.addEventListener("click", ()=>{
-        project_front_container.style.display = "inline-block"
-        project_back_container.style.display = "none"
+    project_arrow_r.addEventListener('click', async ()=>{
+        await hideProject(project_front_container, project_back_container);
+        setTimeout(function(){
+            project_img.src = "";
+            if(p.video[0] == "false"){
+                project_vid.style.display = "none";
+                project_vid.src = "";
+                if(i == img_len - 1){
+                    i = 0;
+                    project_img.src = p.represent_source[i];
+                }else{
+                    i++;
+                    project_img.src = p.represent_source[i];
+                }
+            }else if(p.video[0] == "true"){
+                if(i >= img_len){
+                    project_vid.src = p.video[1];
+                    project_vid.style.display = "inline-block";
+                    i = 0;
+                }else{
+                    project_vid.style.display = "none";
+                    project_img.src = p.represent_source[i];
+                    i++;
+                }
+            }
+        }, 500)
+        await showFront(project_front_container, project_back_container);
+    })
+    project_esc.addEventListener("click", async ()=>{
+        await showFront(project_front_container, project_back_container);
     })
 }
 window.addEventListener('click', async (e)=>{
