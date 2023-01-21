@@ -222,6 +222,8 @@ window.addEventListener("mousemove", async (e)=>{
             cursor_design.style.width = "40px"
             cursor_design.style.height = "40px"
         }else{
+            left_loading_bar.style.opacity = "0%"
+            right_loading_bar.style.opacity = "0%"
             cursor_design.style.opacity = "0%"
             project_page_container.style.cursor = "grab"
         }

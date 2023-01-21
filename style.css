@@ -462,6 +462,7 @@ hr{
 .sec-1, .sec-2, .sec-3, .sec-4{
     width: 50%;
     height: 100%;
+    opacity: 100%;
     /* background-color: black; */
 }
 
@@ -474,7 +475,7 @@ hr{
     justify-content: center;
     position: relative;
     align-items: center;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .project-cursor-left{
@@ -597,17 +598,20 @@ hr{
     font-family: 'LeferiPoint-WhiteObliqueA';
     font-size: 1.4rem;
     font-weight: lighter;
+    border-bottom: 1px solid;
 }
 .project-index-container{
     width: 100%;
     /* padding: 2rem 0rem; */
     display: flex;
     justify-content: center;
+    
 }
 .project-index{
     font-family: 'LeferiPoint-WhiteObliqueA';
     font-size: 1rem;
     font-weight: lighter;
+    border-bottom: 1px solid;
 }
 .project-desc-container{
     display: flex;
@@ -622,6 +626,7 @@ hr{
     font-weight: lighter;
     padding: 1rem 0rem;
     width: 85%;
+    border-bottom: 1px solid;
 }
 .project-desc-en{
     font-family: 'LeferiPoint-WhiteObliqueA';
@@ -629,6 +634,7 @@ hr{
     font-weight: lighter;
     padding: 1rem 0rem;
     width: 85%;
+    border-bottom: 1px solid;
 }
 .project-link-container{
     display: flex;
@@ -637,13 +643,16 @@ hr{
 }
 .project-link{
     font-family: 'LeferiPoint-WhiteObliqueA';
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: lighter;
-    padding: 1rem 0rem;
-    cursor: none;
+    text-decoration: none;
+    padding: 0.3rem 0rem;
     z-index: 50;
-    text-decoration: 1px underline;
     color: black;
+}
+.project-link:hover{
+    text-decoration: 1px underline;
+    color: white;
 }
 .project-scope-container{
     width: 100%;
@@ -676,7 +685,7 @@ hr{
     top: 0;
     left: 0;
     pointer-events: none;
-    display: none;
+    /* display: none; */
 }
 
 .left-loading-bar{
