@@ -25,7 +25,48 @@
             <p class="intro-project-overview-btn">WORKS</p>
           </div>
           <div class="intro-top-right-container">
-            <p class="intro-project-timeline-btn">TIMELINE</p>
+            <p class="intro-project-timeline-btn">LINKS</p>
+            <div class="links-container">
+              <ul class="links-list">
+                <li>
+                  <a
+                    href="https://github.com/shinnjiwoong"
+                    class="link"
+                    target="_blank"
+                    >Github</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://soundcloud.com/montikayoti"
+                    class="link"
+                    target="_blank"
+                    >Soundcloud</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/@montikayoti844"
+                    class="link"
+                    target="_blank"
+                    >Youtube</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/montikayoti/"
+                    class="link"
+                    target="_blank"
+                    >IG</a
+                  >
+                </li>
+              </ul>
+              <img
+                src="./assets/web_logo/cursor/esc.png"
+                alt=""
+                class="intro-esc-btn second"
+              />
+            </div>
           </div>
         </div>
         <div class="bottom-container">
@@ -38,7 +79,7 @@
                 class="intro-esc-btn third"
               />
               <div class="music-title-container">
-                <p class="music-title">＜rgb for grey web＞</p>
+                <p class="music-title">＜RGB＞</p>
               </div>
               <!-- <div class="music-desc-container">
                 <p class="music-description">
@@ -91,34 +132,6 @@
               </p>
               <hr />
               <p class="bio-english">email : shinnjiwoong@gmail.com</p>
-              <div class="links-container">
-                <ul class="links-list">
-                  <li>
-                    <a
-                      href="https://github.com/shinnjiwoong"
-                      class="link"
-                      target="_blank"
-                      >github</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://soundcloud.com/montikayoti"
-                      class="link"
-                      target="_blank"
-                      >soundcloud</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.youtube.com/@montikayoti844"
-                      class="link"
-                      target="_blank"
-                      >youtube</a
-                    >
-                  </li>
-                </ul>
-              </div>
             </div>
           </div>
         </div>
@@ -127,7 +140,7 @@
     <div class="project-page-container">
       <div class="project-top-bar-container">
         <div class="project-home-container">
-          <a href="./index.html" class="project-home-btn">HOME</a>
+          <a href="./index.html" class="project-home-btn">[HOME]</a>
         </div>
         <div class="filter-container">
           <p class="filter-title"></p>
@@ -168,9 +181,7 @@
                 <p class="project-desc-kr"></p>
                 <p class="project-desc-en"></p>
               </div>
-              <div class="project-link-container">
-                <a href="" class="project-link" target="_blank"></a>
-              </div>
+              <div class="project-link-container"></div>
               <div class="project-scope-container"></div>
             </div>
           </div>
@@ -207,9 +218,7 @@
                 <p class="project-desc-kr"></p>
                 <p class="project-desc-en"></p>
               </div>
-              <div class="project-link-container">
-                <a href="" class="project-link" target="_blank"></a>
-              </div>
+              <div class="project-link-container"></div>
               <div class="project-scope-container"></div>
             </div>
           </div>
@@ -248,9 +257,7 @@
                 <p class="project-desc-kr"></p>
                 <p class="project-desc-en"></p>
               </div>
-              <div class="project-link-container">
-                <a href="" class="project-link" target="_blank"></a>
-              </div>
+              <div class="project-link-container"></div>
               <div class="project-scope-container"></div>
             </div>
           </div>
@@ -287,15 +294,26 @@
                 <p class="project-desc-kr"></p>
                 <p class="project-desc-en"></p>
               </div>
-              <div class="project-link-container">
-                <a href="" class="project-link" target="_blank"></a>
-              </div>
+              <div class="project-link-container"></div>
               <div class="project-scope-container"></div>
             </div>
           </div>
         </div>
       </div>
-      <p class="project-page-number"></p>
+      <div class="bottom-bar-container">
+        <img
+          src="assets/web_logo/cursor/arrow_l.png"
+          alt=""
+          class="bottom-bar-prev-btn"
+        />
+        <p class="project-page-number"></p>
+        <img
+          src="assets/web_logo/cursor/arrow_r.png"
+          alt=""
+          class="bottom-bar-next-btn"
+        />
+      </div>
+
       <div class="projects-loading-bar-container">
         <div class="left-loading-bar"></div>
         <div class="right-loading-bar"></div>
@@ -313,6 +331,9 @@
         </div>
       </div>
     </div>
+    <div class="media__screen__container">
+      <p class="media__screen__notice">SCREEN IS TOO SMALL 👀</p>
+    </div>
     <div class="cursor-container">
       <div class="cursor">
         <img src="./assets/web_logo/cursor/esc.png" alt="" class="cursor-img" />
@@ -320,5 +341,6 @@
     </div>
     <script src="app.js"></script>
     <script src="./project_animation.js"></script>
+    <script src="./music.js"></script>
   </body>
 </html>

@@ -7,6 +7,9 @@ const cursor_design = document.querySelector('.cursor-img');
 const bg_container = document.querySelector(".bg-container");
 const project_wrap = document.querySelector(".project-wrap");
 const intro_esc_btn = document.querySelectorAll(".intro-esc-btn");
+const project_home_btn = document.querySelector(".project-home-container");
+const media_screen_container = document.querySelector(".media__screen__container");
+const media_screen_notice = document.querySelector(".media__screen__notice");
 let view_mode_flag = "home";
 
 // MUSIC PLAYER VAR
@@ -28,19 +31,29 @@ const intro_bottom_right_bg = document.querySelector(".intro-bottom-right-bg");
 
 const music_container = document.querySelector('.music-container');
 const bio_container = document.querySelector(".bio-container");
-
+const links_container = document.querySelector('.links-container');
 
 
 // BTNS
 const intro_bio_btn = document.querySelector(".intro-project-bio-btn");
 const intro_work_btn = document.querySelector(".intro-project-overview-btn");
 const intro_music_btn = document.querySelector(".intro-project-links-btn");
-const intro_timeline_btn = document.querySelector(".intro-project-timeline-btn");
+const intro_links_btn = document.querySelector(".intro-project-timeline-btn");
 
 // --------------------------------------------------------------------------------------------
 
 // <FUNCTIONS>
 
+// FOR SMALL SCREEN
+
+
+media_screen_container.addEventListener('mousemove', (e)=>{
+    let red = e.clientX * 255 / window.innerWidth;
+    let blue = e.clientY * 255 / window.innerHeight;
+    let green = (red + blue) * 255 / 510;
+    media_screen_container.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+    media_screen_notice.style.color = `rgb(${255 - red}, ${255 - green}, ${255 - blue})`;
+})
 
 // MUSIC BAR ANIMATIONS
 track_titles.forEach(t => t.addEventListener('click', (e)=>{
@@ -73,7 +86,10 @@ intro_music_btn.addEventListener('click', ()=>{
     intro_music_btn.style.display = 'none';
     music_container.style.display = 'block'
 })
-
+intro_links_btn.addEventListener('click', ()=>{
+    intro_links_btn.style.display = 'none';
+    links_container.style.display = 'block'
+})
 intro_esc_btn.forEach((e)=>{
     e.addEventListener('click', ()=>{
         if(e.classList.contains("third")){
@@ -82,6 +98,9 @@ intro_esc_btn.forEach((e)=>{
         }else if(e.classList.contains("fourth")){
             intro_bio_btn.style.display = "block";
             bio_container.style.display = "none";
+        }else if(e.classList.contains("second")){
+            intro_links_btn.style.display = "block";
+            links_container.style.display = "none";
         }
     })
 })
@@ -101,7 +120,7 @@ window.onload = async ()=>{
     // console.log(view_mode_flag);
 };
 
-// WORK & TIMELINE BTN CLICK TRANSITION
+// WORK BTN CLICK TRANSITION
 async function hideIntroContents(){
     window.removeEventListener('click', handleWindowClick);
     await changeStatus("project");
@@ -125,8 +144,6 @@ async function hideIntroContents(){
     }, 1500)
 }
 
-intro_work_btn.addEventListener('click', hideIntroContents);
-intro_timeline_btn.addEventListener('click', hideIntroContents)
 
 // CURSOR ANIMATION
 let window_width = window.innerWidth;
@@ -155,11 +172,11 @@ window.addEventListener("mousemove", async (e)=>{
     // console.log(window.innerHeight, e.clientY)
 
     // 커서의 위치에 기반하여 음악 플레이어를 보여주는 함수
-    if(window.innerHeight - e.clientY < 30){
-        showMusicBar();
-    }else{
-        hideMusicBar();
-    }
+    // if(window.innerHeight - e.clientY < 30){
+    //     showMusicBar();
+    // }else{
+    //     hideMusicBar();
+    // }
 
     // 요소에 따른 커서의 모양변화
     if(stat == "home"){
@@ -204,75 +221,40 @@ window.addEventListener("mousemove", async (e)=>{
         }
     }
     else if(stat == "project"){
-        if(e.clientX<40){
-            project_page_container.style.cursor = "none"
+        
+        if(e.target.classList.contains("music-bar-playpause-btn")){
             cursor_design.style.opacity = "100%"
-            left_loading_bar.style.opacity = "100%"
+            if(playpause_flag == "play"){
+                cursor_design.setAttribute('src', 'assets/web_logo/cursor/pause.png')
+                cursor_design.style.animation = "none"
+                cursor_design.style.width = "50px"
+                cursor_design.style.height = "50px"
+            }else if(playpause_flag == "pause"){
+                cursor_design.setAttribute('src', 'assets/web_logo/cursor/play.png')
+                cursor_design.style.animation = "none"
+                cursor_design.style.width = "50px"
+                cursor_design.style.height = "50px"
+            }
+        }
+        else if(e.target.classList.contains("music-bar-prev-btn")){
+            cursor_design.style.opacity = "100%"
             cursor_design.setAttribute('src', 'assets/web_logo/cursor/arrow_l.png')
             cursor_design.style.animation = "none"
-            cursor_design.style.width = "40px"
-            cursor_design.style.height = "40px"
+            cursor_design.style.width = "60px"
+            cursor_design.style.height = "60px"
         }
-        else if(window.innerWidth - e.clientX < 40){
-            project_page_container.style.cursor = "none"
+        else if(e.target.classList.contains("music-bar-next-btn")){
             cursor_design.style.opacity = "100%"
-            right_loading_bar.style.opacity = "100%"
             cursor_design.setAttribute('src', 'assets/web_logo/cursor/arrow_r.png')
             cursor_design.style.animation = "none"
-            cursor_design.style.width = "40px"
-            cursor_design.style.height = "40px"
-        }else{
+            cursor_design.style.width = "60px"
+            cursor_design.style.height = "60px"
+        }
+        else{
             left_loading_bar.style.opacity = "0%"
             right_loading_bar.style.opacity = "0%"
             cursor_design.style.opacity = "0%"
             project_page_container.style.cursor = "grab"
         }
-        // else if(e.target.classList.contains("project-img")){
-        //     if(e.clientX < rect_1.width/3 || e.clientX < rect_2.width/3 || e.clientX < rect_3.width/3 || e.clientX < rect_4.width/3){
-        //         left_loading_bar.style.opacity = "0%"
-        //         right_loading_bar.style.opacity = "0%"
-        //         cursor_design.setAttribute('src', 'assets/web_logo/cursor/arrow_l.png')
-        //         cursor_design.style.animation = "none"
-        //         cursor_design.style.width = "40px"
-        //         cursor_design.style.height = "40px"
-        //     }else if(e.clientX > rect_1.width*2/3 || e.clientX > rect_2.width*2/3 || e.clientX > rect_3.width*2/3 || e.clientX > rect_4.width*2/3){
-        //         left_loading_bar.style.opacity = "0%"
-        //         right_loading_bar.style.opacity = "0%"
-        //         cursor_design.setAttribute('src', 'assets/web_logo/cursor/arrow_r.png')
-        //         cursor_design.style.animation = "none"
-        //         cursor_design.style.width = "40px"
-        //         cursor_design.style.height = "40px"
-        //     }else{
-        //         left_loading_bar.style.opacity = "0%"
-        //         right_loading_bar.style.opacity = "0%"
-        //         cursor_design.setAttribute('src', 'assets/web_logo/cursor/main_cursor.png')
-        //         cursor_design.style.animation = "none"
-        //         cursor_design.style.width = "30px"
-        //         cursor_design.style.height = "30px"
-        //     }
-        // }
-        // else if(e.target.classList.contains("project-back-container") || e.target.parentNode.classList.contains("project-back-container")){
-        //     if(e.target.classList.contains("project-link")){
-        //         console.log("hover")
-        //         cursor_design.setAttribute('src', 'assets/web_logo/cursor/link.png')
-        //         cursor_design.style.width = "20px"
-        //         cursor_design.style.height = "20px"
-        //     }else{
-        //         left_loading_bar.style.opacity = "0%"
-        //         right_loading_bar.style.opacity = "0%"
-        //         cursor_design.setAttribute('src', 'assets/web_logo/cursor/esc.png')
-        //         cursor_design.style.animation = "rotate_image 2s linear infinite"
-        //         cursor_design.style.width = "20px"
-        //         cursor_design.style.height = "20px"
-        //     }
-        // }
-        // else{
-        //     left_loading_bar.style.opacity = "0%"
-        //     right_loading_bar.style.opacity = "0%"
-        //     cursor_design.setAttribute('src', 'assets/web_logo/cursor/esc.png')
-        //     cursor_design.style.animation = "rotate_image 2s linear infinite"
-        //     cursor_design.style.width = "20px"
-        //     cursor_design.style.height = "20px"
-        // }
     }
 })
