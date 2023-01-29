@@ -7,7 +7,7 @@ const cursor_design = document.querySelector('.cursor-img');
 const bg_container = document.querySelector(".bg-container");
 const project_wrap = document.querySelector(".project-wrap");
 const intro_esc_btn = document.querySelectorAll(".intro-esc-btn");
-const project_home_btn = document.querySelector(".project-home-container");
+const project_home_btn = document.querySelector(".project-home-btn");
 const media_screen_container = document.querySelector(".media__screen__container");
 const media_screen_notice = document.querySelector(".media__screen__notice");
 let view_mode_flag = "home";
@@ -28,6 +28,8 @@ const intro_title_container = document.querySelector('.intro-top-bg');
 const intro_top_right_bg = document.querySelector('.intro-top-right-bg');
 const intro_bottom = document.querySelector(".intro-bottom-bg");
 const intro_bottom_right_bg = document.querySelector(".intro-bottom-right-bg");
+const intro_bg_top = document.querySelector(".intro-bg-top-container");
+const intro_bg_bottom = document.querySelector(".intro-bg-bottom-container");
 
 const music_container = document.querySelector('.music-container');
 const bio_container = document.querySelector(".bio-container");
@@ -129,18 +131,27 @@ async function hideIntroContents(){
     setTimeout(handleWindowClick, 400);
     setTimeout(handleWindowClick, 600);
     setTimeout(function(){
+        intro_bg_top.style.opacity = '0%';
+        intro_bg_bottom.style.opacity = '0%';
         intro_title_container.style.backgroundColor = "rgb(200, 200, 200)"
         intro_top_right_bg.style.backgroundColor = "rgb(200, 200, 200)";
         intro_bottom.style.backgroundColor = "rgb(200, 200, 200)";
         intro_bottom_right_bg.style.backgroundColor = "rgb(200, 200, 200)";
+        //intro_page.style.opacity = '0%'
+        project_page_container.style.display = "block"
         top_container.style.opacity = "0%"
         bottom_container.style.opacity = "0%";
         window.addEventListener('click', handleWindowClick);
     }, 800);
     setTimeout(function(){
+        intro_bg_top.style.opacity = '100%';
+        intro_bg_bottom.style.opacity = '100%';
         top_container.style.display = "none";
         bottom_container.style.display = "none";
-        project_page_container.style.display = "block"
+        // intro_page.style.display = 'none'
+        project_page_container.style.opacity = '100%'
+        intro_bg_top.style.opacity = '0%';
+        intro_bg_bottom.style.opacity = '0%';
     }, 1500)
 }
 
@@ -161,6 +172,7 @@ function randomColorChange(e){
 }
 window.addEventListener("mousemove", async (e)=>{
     let stat = await getStatus();
+    console.log(stat)
     let rect_1 = sec_1.getBoundingClientRect();
     let rect_2 = sec_2.getBoundingClientRect();
     let rect_3 = sec_3.getBoundingClientRect();

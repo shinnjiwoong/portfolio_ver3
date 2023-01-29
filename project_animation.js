@@ -197,7 +197,7 @@ const sec_3 = document.querySelector(".sec-3");
 const sec_4 = document.querySelector(".sec-4");
 let sections = [sec_1, sec_2, sec_3, sec_4];
 
-let project_arr = [exodus,shinnjiwoong, gnyang_2022, picit, reservoir_dogs, hyndai_casper, onerm, kasina_seongsu, umm_1, kasina_kaffe, altgal_simple, artificial_object, rem, postcorona, datura, mindcraft];
+let project_arr = [shinnjiwoong, exodus, gnyang_2022, picit, reservoir_dogs, hyndai_casper, onerm, kasina_seongsu, umm_1, kasina_kaffe, altgal_simple, artificial_object, rem, postcorona, datura, mindcraft];
 let whole_page_num = getPageNum();
 let page_var = 1;
 
@@ -210,6 +210,39 @@ function getPageNum(){
     }
 }
 // FUNCTIONS
+
+// PROJECT HOME BTN
+project_home_btn.addEventListener('click', async ()=>{
+    await changeStatus('home');
+    project_page_container.style.opacity = '0%';
+    intro_bg_top.style.opacity = '0%';
+    intro_bg_bottom.style.opacity = '0%';
+    setTimeout(function(){
+
+        intro_title_container.style.backgroundColor = 'white';
+        intro_top_right_bg.style.backgroundColor = 'rgb(200, 200, 200)';
+        intro_bottom.style.backgroundColor = 'rgb(200, 200, 200)';
+        intro_bottom_right_bg.style.backgroundColor = 'white';
+        top_container.style.display = "flex";
+        bottom_container.style.display = "flex";
+        // window.addEventListener('click', handleWindowClick);
+        cursor_design.style.opacity = "100%"
+        music_container.style.display = "none"
+        intro_music_btn.style.display = "block"
+        intro_bio_btn.style.display = "block";
+        bio_container.style.display = "none";
+        intro_links_btn.style.display = "block";
+        links_container.style.display = "none";
+        project_page_container.style.display = "none"
+    }, 500);
+    setTimeout(function(){    
+        intro_bg_top.style.opacity = '100%';
+        intro_bg_bottom.style.opacity = '100%';
+        top_container.style.opacity = "100%"
+        bottom_container.style.opacity = "100%";
+    }, 600)
+})
+
 
 intro_work_btn.addEventListener("click", async ()=>{
     await hideIntroContents();
