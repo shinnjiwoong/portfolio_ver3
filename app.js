@@ -119,6 +119,9 @@ async function getStatus(){
 
 window.onload = async ()=>{
     changeStatus("home")
+    setTimeout(function(){
+        music_arr[0].play();
+    },500)
     // console.log(view_mode_flag);
 };
 
@@ -150,8 +153,6 @@ async function hideIntroContents(){
         bottom_container.style.display = "none";
         // intro_page.style.display = 'none'
         project_page_container.style.opacity = '100%'
-        intro_bg_top.style.opacity = '0%';
-        intro_bg_bottom.style.opacity = '0%';
     }, 1500)
 }
 

@@ -154,7 +154,7 @@ let gnyang_2022 = {
 }
 let shinnjiwoong = {
     "name" : "SHINNJIWOONG",
-    "project_num" : "015",
+    "project_num" : "016",
     "year" : "2023",
     "scope" : ["programming", "design", "music/sound"],
     "represent_source" : ["assets/project_source/shinn_1.png", "assets/project_source/shinn_2.png", "assets/project_source/shinn_3.png", "assets/project_source/shinn_4.png"],
@@ -166,7 +166,7 @@ let shinnjiwoong = {
 
 let exodus = {
     "name" : "EXODUS",
-    "project_num" : "016",
+    "project_num" : "015",
     "year" : "2023",
     "scope" : ["music/sound"],
     "represent_source" : ["assets/project_source/exodus_1.png", "assets/project_source/exodus_2.png", "assets/project_source/exodus_3.png", "assets/project_source/exodus_4.png", "assets/project_source/exodus_5.png", "assets/project_source/exodus_6.png"],
@@ -307,7 +307,7 @@ async function showFront(front, back){
 }
 async function showBack(front, back){
     front.style.display = "none";
-    back.style.display = "inline-block";
+    back.style.display = "flex";
     back.style.opacity = "100%";
 }
 async function hideSource(img){
