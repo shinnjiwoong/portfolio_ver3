@@ -779,8 +779,8 @@ hr{
     display: inline-block;
 }
 .project-home-btn{
-    width: 40px;
-    height: 40px;
+    width: 33px;
+    height: 33px;
     transition: all 0.3s cubic-bezier(.76,-0.01,.23,1);
 }
 .project-home-container:hover .project-home-btn{

@@ -92,7 +92,7 @@ let kasina_seongsu = {
     "year" : "2022",
     "scope" : ["music/sound"],
     "represent_source" : ["assets/project_source/kasina_ss_1.png"],
-    "video" : ['true', "assets/project_videos/kasina_ss.mp4"],
+    "video" : ['true', "assets/project_videos/kasina_seongsu.mp4"],
     "link" : ["", ""],
     "description_kr" : "<span style='font-size: 1rem'>Project for </span> : Kasina",
     "description_en" : "- Animation : Cary Nam <br>- Music : Jiwoong Shinn <br>- Mixing & Mastering : Jiwoong Shinn"
@@ -103,7 +103,7 @@ let onerm = {
     "year" : "2022",
     "scope" : ["music/sound"],
     "represent_source" : ["assets/project_source/onerm_1.png", "assets/project_source/onerm_2.png", "assets/project_source/onerm_3.png"],
-    "video" : ['true', "assets/project_videos/onerm.mp4"],
+    "video" : ['true', "assets/project_videos/onerm_2.mp4"],
     "link" : ["https://youtu.be/EuHSbNYCJ_U", "video"],
     "description_kr" : "<span style='font-size: 1rem'>Project for </span> : ONERM",
     "description_en" : "- Video Production : 이승원<br>- Music : Jiwoong Shinn <br>- Mixing & Mastering : Jiwoong Shinn"
@@ -114,7 +114,7 @@ let hyndai_casper = {
     "year" : "2022",
     "scope" : ["music/sound"],
     "represent_source" : ["assets/project_source/casper_kasina_1.png", "assets/project_source/casper_kasina_2.png", "assets/project_source/casper_kasina_3.png"],
-    "video" : ['true', "assets/project_videos/casper_kasina.mp4"],
+    "video" : ['true', "assets/project_videos/casper_kasina_2.mp4"],
     "link" : ["", ""],
     "description_kr" : "<span style='font-size: 1rem'>Project for </span> : Hyundai CASPER, Kasina",
     "description_en" : "- Animation : Cary Nam <br>- Music : Jiwoong Shinn <br>- Mixing & Mastering : Jiwoong Shinn"
@@ -136,7 +136,7 @@ let picit = {
     "year" : "2022",
     "scope" : ["programming", "design"],
     "represent_source" : ["assets/project_source/PICIT_1.png", "assets/project_source/PICIT_2.png", "assets/project_source/PICIT_3.png", "assets/project_source/PICIT_4.png"],
-    "video" : ['true', "assets/project_videos/picit.mp4"],
+    "video" : ['true', "assets/project_videos/picit_1.mp4"],
     "link" : ["https://github.com/shinnjiwoong/PicIt.com", "about project"],
     "description_kr" : "<span style='font-size: 1rem'>Project for </span> : Myself (personal work)",
     "description_en" : "- Web Development : Jiwoong Shinn, Sungwon Yuk <br>- Web Design : Jiwoong Shinn"
