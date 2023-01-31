@@ -118,8 +118,8 @@ async function getStatus(){
 }
 
 window.onload = async ()=>{
-    changeStatus("home")
-    setTimeout(function(){
+    await changeStatus("home")
+    await setTimeout(function(){
         music_arr[0].play();
         current_track = music_arr[0];
     },500)
