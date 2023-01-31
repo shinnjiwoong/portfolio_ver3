@@ -121,6 +121,7 @@ window.onload = async ()=>{
     changeStatus("home")
     setTimeout(function(){
         music_arr[0].play();
+        current_track = music_arr[0];
     },500)
     // console.log(view_mode_flag);
 };
@@ -173,28 +174,18 @@ function randomColorChange(e){
 }
 window.addEventListener("mousemove", async (e)=>{
     let stat = await getStatus();
-    console.log(stat)
     let rect_1 = sec_1.getBoundingClientRect();
     let rect_2 = sec_2.getBoundingClientRect();
     let rect_3 = sec_3.getBoundingClientRect();
     let rect_4 = sec_4.getBoundingClientRect();
-    // console.log(stat);
+
     // Cursor change
     cursor.style.top = `${e.clientY}px`;
     cursor.style.left = `${e.clientX}px`;
-    // console.log(window.innerHeight, e.clientY)
-
-    // 커서의 위치에 기반하여 음악 플레이어를 보여주는 함수
-    // if(window.innerHeight - e.clientY < 30){
-    //     showMusicBar();
-    // }else{
-    //     hideMusicBar();
-    // }
 
     // 요소에 따른 커서의 모양변화
     if(stat == "home"){
-        // cursor_design.style.border = "solid 1.5px rgb(25, 25, 25)"
-        // cursor_design.style.backgroundColor = "rgb(25, 25, 25, 0.2)"
+        music__container.style.cursor = "none"
         if(e.target.classList.contains("link")){
             cursor_design.setAttribute('src', 'assets/web_logo/cursor/link.png')
             cursor_design.style.animation = "none"
@@ -268,6 +259,7 @@ window.addEventListener("mousemove", async (e)=>{
             right_loading_bar.style.opacity = "0%"
             cursor_design.style.opacity = "0%"
             project_page_container.style.cursor = "grab"
+            music__container.style.cursor = "grab"
         }
     }
 })
