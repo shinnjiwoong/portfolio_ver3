@@ -340,8 +340,10 @@ async function showProject(e,p){
     // project_img.src = "";
 
     await hideProject(project_front_container, project_back_container);
-    setTimeout(function(){
-        project_img.src = p.represent_source[0];
+
+    setTimeout(async function(){
+        // project_img.src = p.represent_source[0];
+        await showImg(p, project_img, 0);
         project_title.innerText = p.name;
         project_index.innerText = `${p.project_num} - ${p.year}`
         project_desc_kr.innerHTML = p.description_kr;
@@ -363,11 +365,13 @@ async function showProject(e,p){
         }
         
         project_scope_container.innerHTML = "";
+
         if(p.video[0] == "false"){
             project_vid.style.display = "none";
             project_vid.src = "";
         }else if(p.video[0] == "true"){
-            project_vid.src = p.video[1];
+            // project_vid.src = p.video[1];
+            await showVid(p, project_vid, 1);
             project_vid.style.display = "inline-block";
         }
         for(let i = 0; i < project_scope_len; i++){
@@ -410,7 +414,7 @@ async function showProject(e,p){
     })
     project_arrow_l.addEventListener('click', async ()=>{
         await hideProject(project_front_container, project_back_container);
-        setTimeout(function(){
+        setTimeout(async function(){
             project_img.src = "";
             if(p.video[0] == "false"){
                 i = i-1;
@@ -418,19 +422,23 @@ async function showProject(e,p){
                 project_vid.src = "";
                 if(i < 0){
                     i = img_len-1
-                    project_img.src = p.represent_source[i];
+                    await showImg(p, project_img, i)
+                    // project_img.src = p.represent_source[i];
                 }else{
-                    project_img.src = p.represent_source[i];
+                    await showImg(p, project_img, i)
+                    // project_img.src = p.represent_source[i];
                 }
             }else if(p.video[0] == "true"){
                 i = i-1;
                 if(i < 0){
-                    project_vid.src = p.video[1];
+                    await showVid(p, project_vid, 1)
+                    // project_vid.src = p.video[1];
                     project_vid.style.display = "inline-block";
                     i = img_len;
                 }else{
                     project_vid.style.display = "none";
-                    project_img.src = p.represent_source[i];
+                    await showImg(p, project_img, i)
+                    // project_img.src = p.represent_source[i];
                 }
             }
         }, 500)
@@ -438,7 +446,7 @@ async function showProject(e,p){
     })
     project_arrow_r.addEventListener('click', async ()=>{
         await hideProject(project_front_container, project_back_container);
-        setTimeout(function(){
+        setTimeout(async function(){
             project_img.src = "";
             if(p.video[0] == "false"){
                 i++;
@@ -446,19 +454,23 @@ async function showProject(e,p){
                 project_vid.src = "";
                 if(i == img_len){
                     i = 0;
-                    project_img.src = p.represent_source[i];
+                    await showImg(p, project_img, i)
+                    // project_img.src = p.represent_source[i];
                 }else{
-                    project_img.src = p.represent_source[i];
+                    await showImg(p, project_img, i)
+                    // project_img.src = p.represent_source[i];
                 }
             }else if(p.video[0] == "true"){
                 i++;
                 if(i == img_len){
-                    project_vid.src = p.video[1];
+                    await showVid(p, project_vid, 1)
+                    // project_vid.src = p.video[1];
                     project_vid.style.display = "inline-block";
                     i = -1;
                 }else{
                     project_vid.style.display = "none";
-                    project_img.src = p.represent_source[i];
+                    await showImg(p, project_img, i)
+                    // project_img.src = p.represent_source[i];
                 }
             }
         }, 500)
@@ -502,4 +514,11 @@ bottom_bar_next_btn.addEventListener('click', async ()=>{
     await change_projects(changing_index);
 })
 
+// 프로젝트 이미지 및  비디오 소스의 데이터 가져오기 
+async function showImg(project, element, index){
+    element.src = project.represent_source[index];
+}
 
+async function showVid(project, element, index){
+    element.src = project.video[index];
+}
