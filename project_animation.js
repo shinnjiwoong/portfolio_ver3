@@ -2,7 +2,7 @@ let mindcraft = {
     "name" : "MINDCRAFT",
     "project_num" : "001",
     "year" : "2019",
-    "scope" : ["music/sound"],
+    "scope" : ["Music"],
     "represent_source" : ["assets/project_source/mindcraft_1.png", "assets/project_source/mindcraft_2.png"],
     "video" : ['false'],
     "link" : ["https://soundcloud.com/montikayoti/sets/mindcraft", 'soundcloud'],
@@ -13,7 +13,7 @@ let datura = {
     "name" : "DATURA : TESTTAPE",
     "project_num" : "002",
     "year" : "2019",
-    "scope" : ["music/sound"],
+    "scope" : ["Music", "Mix / Master"],
     "represent_source" : ["assets/project_source/datura_1.png", "assets/project_source/datura_2.png", "assets/project_source/datura_3.png"],
     "video" : ['false'],
     "link" : ["https://open.spotify.com/album/6wumkYIzwCb4HC75H6KqDy?si=F6uUCIDJRuqSj8Qon8KLEQ", "spotify", "https://youtu.be/gqTXPMBMY0o", "TU + DA mv"],
@@ -24,7 +24,7 @@ let postcorona = {
     "name" : "POSTCORONA",
     "project_num" : "003",
     "year" : "2020",
-    "scope" : ["music/sound"],
+    "scope" : ["Music", "Mix / Master"],
     "represent_source" : ["assets/project_source/postcorona_1.png", "assets/project_source/postcorona_2.png", "assets/project_source/postcorona_3.png"],
     "video" : ['false'],
     "link" : ["https://open.spotify.com/album/4XVJ4p4A3my4qaKoQAmzHs?si=Yxc6Uii0TDySSa6RavOIPQ", "spotify", "https://youtu.be/r71OJW6194k", "FORMLESS visual", "https://youtu.be/CyD3Q1mhFe4", "POTENTIAL mv", "https://youtu.be/oVHx8RgiSOk", "LANDSCAPE mv"],
@@ -35,7 +35,7 @@ let rem = {
     "name" : "REM",
     "project_num" : "004",
     "year" : "2021",
-    "scope" : ["music/sound"],
+    "scope" : ["Music", "Mix / Master"],
     "represent_source" : ["assets/project_source/rem_1.png", "assets/project_source/rem_2.png", "assets/project_source/rem_3.png"],
     "video" : ['false'],
     "link" : ["https://open.spotify.com/album/3o3wiixU7kea7WqqV0slMD?si=d89YGzskSmiRwooYwGt38A", "spotify"],
@@ -46,7 +46,7 @@ let artificial_object = {
     "name" : "DIGITS / ARTIFICIAL OBJECT",
     "project_num" : "005",
     "year" : "2021",
-    "scope" : ["music/sound"],
+    "scope" : ["Music", "Mix / Master"],
     "represent_source" : ["assets/project_source/ao_2.png", "assets/project_source/ao_1.png"],
     "video" : ['false'],
     "link" : ["https://open.spotify.com/album/4aiYP97aOHtDt4bmEFk69H?si=Pbf1JusYQ9e0jrByDOyu8w", "spotify", "https://youtu.be/ION7EsKobNA", "DIGITS mv", "https://youtu.be/_UdS-lo9Kek", "BLIND SPOT visual"],
@@ -57,7 +57,7 @@ let altgal_simple = {
     "name" : "＜간결한 생각들: 생태-젠더-공산＞",
     "project_num" : "006",
     "year" : "2021",
-    "scope" : ["music/sound"],
+    "scope" : ["Music"],
     "represent_source" : ["assets/project_source/simple_thought_1.png", "assets/project_source/simple_thought_2.png"],
     "video" : ['false'],
     "link" : ["https://soundcloud.com/montikayoti/a-sequence-for-sinking?si=652cfd9e3fa540809d0c2b76d6069d74&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing","soundcloud", "http://altspaceloop.com/exhibitions/simplethoughts-2021", "exhibition info"],
@@ -68,7 +68,7 @@ let kasina_kaffe = {
     "name" : "KASINA Kaffe commercial",
     "project_num" : "007",
     "year" : "2022",
-    "scope" : ["music/sound"],
+    "scope" : ["Music"],
     "represent_source" : ["assets/project_source/kaffe_1.png", "assets/project_source/kaffe_2.png", "assets/project_source/kaffe_3.png", "assets/project_source/kaffe_4.png"],
     "video" : ['false'],
     "link" : ["https://www.kasina.co.kr/goods/event_sale.php?sno=126", "shop"],
@@ -79,7 +79,7 @@ let umm_1 = {
     "name" : "꽃내음 vol.1 | UMM vol.1",
     "project_num" : "008",
     "year" : "2022",
-    "scope" : ["mixset", "design"],
+    "scope" : ["Mixset", "Artwork"],
     "represent_source" : ["assets/project_source/umm_vol1_1.png", "assets/project_source/umm_vol1_2.png"],
     "video" : ['false'],
     "link" : ["https://soundcloud.com/montikayoti/umm-vol1?si=fc065ae8160d4da7adf4e738704eb97e&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing", "soundcloud"],
@@ -90,7 +90,7 @@ let kasina_seongsu = {
     "name" : "KASINA seongsu ave. commercial",
     "project_num" : "009",
     "year" : "2022",
-    "scope" : ["music/sound"],
+    "scope" : ["Music"],
     "represent_source" : ["assets/project_source/kasina_ss_1.png"],
     "video" : ['true', "assets/project_videos/kasina_seongsu.mp4"],
     "link" : ["", ""],
@@ -101,7 +101,7 @@ let onerm = {
     "name" : "ONERM : NEVER FALL DOWN",
     "project_num" : "010",
     "year" : "2022",
-    "scope" : ["music/sound"],
+    "scope" : ["Music"],
     "represent_source" : ["assets/project_source/onerm_1.png", "assets/project_source/onerm_2.png", "assets/project_source/onerm_3.png"],
     "video" : ['true', "assets/project_videos/onerm_2.mp4"],
     "link" : ["https://youtu.be/EuHSbNYCJ_U", "video"],
@@ -112,7 +112,7 @@ let hyndai_casper = {
     "name" : "HYUNDAI CASPER x KASINA commercial",
     "project_num" : "011",
     "year" : "2022",
-    "scope" : ["music/sound"],
+    "scope" : ["Music"],
     "represent_source" : ["assets/project_source/casper_kasina_1.png", "assets/project_source/casper_kasina_2.png", "assets/project_source/casper_kasina_3.png"],
     "video" : ['true', "assets/project_videos/casper_kasina_2.mp4"],
     "link" : ["", ""],
@@ -123,7 +123,7 @@ let reservoir_dogs = {
     "name" : "RESERVOIR DOGS mix",
     "project_num" : "012",
     "year" : "2022",
-    "scope" : ["mixset", "design"],
+    "scope" : ["Mixset", "Artwork"],
     "represent_source" : ["assets/project_source/reservoir_dogs_1.png", "assets/project_source/reservoir_dogs_2.png", "assets/project_source/reservoir_dogs_3.png"],
     "video" : ['false'],
     "link" : ["https://soundcloud.com/montikayoti/reservoir_dogs_mixmp3?si=3266bf45ea83445fa38e2b17f337fd02&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing", "soundcloud"],
@@ -134,7 +134,7 @@ let picit = {
     "name" : "PICIT",
     "project_num" : "013",
     "year" : "2022",
-    "scope" : ["programming", "design"],
+    "scope" : ["Frontend / Backend Development", "Web Design"],
     "represent_source" : ["assets/project_source/PICIT_1.png", "assets/project_source/PICIT_2.png", "assets/project_source/PICIT_3.png", "assets/project_source/PICIT_4.png"],
     "video" : ['true', "assets/project_videos/picit_1.mp4"],
     "link" : ["https://github.com/shinnjiwoong/PicIt.com", "about project"],
@@ -145,7 +145,7 @@ let gnyang_2022 = {
     "name" : "GNYANG_20_21",
     "project_num" : "014",
     "year" : "2022",
-    "scope" : ["music/sound"],
+    "scope" : ["Music"],
     "represent_source" : ["assets/project_source/gnyang_2022_1.png", "assets/project_source/gnyang_2022_2.png"],
     "video" : ['false', ""],
     "link" : ["https://soundcloud.com/montikayoti/sets/gnyang_20_21-monti-kayoti-x-jamwon?si=60ba5e9e80724150b6a88ecd96d39bb8&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing", "soundcloud"],
@@ -156,7 +156,7 @@ let shinnjiwoong = {
     "name" : "SHINNJIWOONG",
     "project_num" : "016",
     "year" : "2023",
-    "scope" : ["programming", "design", "music/sound"],
+    "scope" : ["Frontend Development", "Web Design", "Music"],
     "represent_source" : ["assets/project_source/shinn_1.png", "assets/project_source/shinn_2.png", "assets/project_source/shinn_3.png", "assets/project_source/shinn_4.png"],
     "video" : ['true', "assets/project_videos/portfolio_web.mp4"],
     "link" : ["", ""],
@@ -168,7 +168,7 @@ let exodus = {
     "name" : "EXODUS",
     "project_num" : "015",
     "year" : "2023",
-    "scope" : ["music/sound"],
+    "scope" : ["Music", "Sound Design"],
     "represent_source" : ["assets/project_source/exodus_1.png", "assets/project_source/exodus_2.png", "assets/project_source/exodus_3.png", "assets/project_source/exodus_4.png", "assets/project_source/exodus_5.png", "assets/project_source/exodus_6.png"],
     "video" : ['false', ""],
     "link" : ["", ""],
@@ -350,6 +350,7 @@ async function showProject(e,p){
         project_desc_en.innerHTML = p.description_en;
         project_link_container.innerHTML = "";
         if(p.link[0] != ""){
+            project_link_container.style.display = 'flex';
             let link_length = p.link.length;
 
             for(let i = 0; i < link_length-1; i = i+2){
@@ -362,9 +363,11 @@ async function showProject(e,p){
                 project_link_container.appendChild(link)
             }
             
+        }else{
+            project_link_container.style.display = 'none';
         }
         
-        project_scope_container.innerHTML = "";
+        project_scope_container.innerHTML = "Work Area : ";
 
         if(p.video[0] == "false"){
             project_vid.style.display = "none";
@@ -376,21 +379,25 @@ async function showProject(e,p){
         }
         for(let i = 0; i < project_scope_len; i++){
             let scope_node = document.createElement('p');
+            let comma = document.createElement('p');
             scope_node.classList.add('project-scope');
-            if(p.scope[i] == "music/sound"){
-                scope_node.style.color = scope_music_color;
-            }else if(p.scope[i] == "programming"){
-                scope_node.style.color = scope_programming_color;
-            }else if(p.scope[i] == "mixset"){
-                scope_node.style.color = scope_mixset_color;
-            }else if(p.scope[i] == "design"){
-                scope_node.style.color = scope_design_color;
-            }
-            scope_node.style.borderRadius = '30px'
+            comma.classList.add('project-scope');
+            // if(p.scope[i] == "music/sound"){
+            //     scope_node.style.color = scope_music_color;
+            // }else if(p.scope[i] == "programming"){
+            //     scope_node.style.color = scope_programming_color;
+            // }else if(p.scope[i] == "mixset"){
+            //     scope_node.style.color = scope_mixset_color;
+            // }else if(p.scope[i] == "design"){
+            //     scope_node.style.color = scope_design_color;
+            // }
             scope_node.style.fontWeight = "lighter";
             scope_node.innerText = p.scope[i]
+            comma.innerText = ','
             project_scope_container.appendChild(scope_node);
+            project_scope_container.appendChild(comma);
         }
+        project_scope_container.lastChild.remove();
     }, 500)
     
     project_img.addEventListener("load", async ()=>{
