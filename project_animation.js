@@ -423,9 +423,11 @@ async function showProject(e,p){
                 if(i < 0){
                     i = img_len-1
                     await showImg(p, project_img, i)
+                    await showFront(project_front_container, project_back_container);
                     // project_img.src = p.represent_source[i];
                 }else{
                     await showImg(p, project_img, i)
+                    await showFront(project_front_container, project_back_container);
                     // project_img.src = p.represent_source[i];
                 }
             }else if(p.video[0] == "true"){
@@ -435,14 +437,16 @@ async function showProject(e,p){
                     // project_vid.src = p.video[1];
                     project_vid.style.display = "inline-block";
                     i = img_len;
+                    await showFront(project_front_container, project_back_container);
                 }else{
                     project_vid.style.display = "none";
                     await showImg(p, project_img, i)
+                    await showFront(project_front_container, project_back_container);
                     // project_img.src = p.represent_source[i];
                 }
             }
         }, 500)
-        await showFront(project_front_container, project_back_container);
+        
     })
     project_arrow_r.addEventListener('click', async ()=>{
         await hideProject(project_front_container, project_back_container);
@@ -455,9 +459,11 @@ async function showProject(e,p){
                 if(i == img_len){
                     i = 0;
                     await showImg(p, project_img, i)
+                    await showFront(project_front_container, project_back_container);
                     // project_img.src = p.represent_source[i];
                 }else{
                     await showImg(p, project_img, i)
+                    await showFront(project_front_container, project_back_container);
                     // project_img.src = p.represent_source[i];
                 }
             }else if(p.video[0] == "true"){
@@ -467,14 +473,16 @@ async function showProject(e,p){
                     // project_vid.src = p.video[1];
                     project_vid.style.display = "inline-block";
                     i = -1;
+                    await showFront(project_front_container, project_back_container);
                 }else{
                     project_vid.style.display = "none";
                     await showImg(p, project_img, i)
+                    await showFront(project_front_container, project_back_container);
                     // project_img.src = p.represent_source[i];
                 }
             }
         }, 500)
-        await showFront(project_front_container, project_back_container);
+        
     })
     project_esc.addEventListener("click", async ()=>{
         await showFront(project_front_container, project_back_container);
