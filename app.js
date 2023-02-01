@@ -154,6 +154,7 @@ async function hideIntroContents(){
         bottom_container.style.display = "none";
         // intro_page.style.display = 'none'
         project_page_container.style.opacity = '100%'
+        cursor_design.style.opacity = "0%"
     }, 1500)
 }
 
