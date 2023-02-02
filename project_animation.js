@@ -251,9 +251,10 @@ intro_work_btn.addEventListener("click", async ()=>{
     loading__container.style.display = 'flex';
     loading__container.style.opacity = '100%'
     setTimeout(async function(){
-        await change_projects(1)}, 2000);
+        await change_projects(1)
         loading__container.style.opacity = '0%'
         loading__container.style.display = 'none';
+    }, 2000);
 });
 // 프로젝트 전환
 async function setPageIndex(num){
@@ -272,6 +273,8 @@ async function setPageNum(){
 }
 async function change_projects(num){
     console.log(whole_page_num)
+    loading__container.style.display = 'flex';
+    loading__container.style.opacity = '100%'
     if(num == parseInt(project_arr.length/4) + 1){
         let rest = project_arr.length % 4;
         for(let i = 0; i < rest; i++){
@@ -504,6 +507,8 @@ async function showProject(e,p){
 // Changing projects
 bottom_bar_prev_btn.addEventListener('click', async ()=>{
     let changing_index = await getPageIndex();
+    // loading__container.style.display = 'flex';
+    // loading__container.style.opacity = '100%';
     if(changing_index == 1){
         if(project_arr.length%4 == 0){
             changing_index = parseInt(project_arr.length / 4);
@@ -516,8 +521,7 @@ bottom_bar_prev_btn.addEventListener('click', async ()=>{
     }
     await setPageIndex(changing_index);
     await setPageNum()
-    loading__container.style.display = 'flex';
-    loading__container.style.opacity = '100%'
+    
     await change_projects(changing_index);
     loading__container.style.opacity = '0%'
     loading__container.style.display = 'none';
@@ -525,6 +529,8 @@ bottom_bar_prev_btn.addEventListener('click', async ()=>{
 
 bottom_bar_next_btn.addEventListener('click', async ()=>{
     let changing_index = await getPageIndex();
+    // loading__container.style.display = 'flex';
+    // loading__container.style.opacity = '100%'
     if(project_arr.length % 4 == 0 && changing_index == project_arr.length / 4){
         changing_index = 1;
     }else if(project_arr.length % 4 != 0 && changing_index == parseInt(project_arr.length / 4) + 1){
@@ -535,8 +541,7 @@ bottom_bar_next_btn.addEventListener('click', async ()=>{
     }
     await setPageIndex(changing_index);
     await setPageNum();
-    loading__container.style.display = 'flex';
-    loading__container.style.opacity = '100%'
+    
     await change_projects(changing_index);
     loading__container.style.opacity = '0%'
     loading__container.style.display = 'none';

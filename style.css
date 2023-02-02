@@ -890,6 +890,7 @@ hr{
     display: none;
     justify-content: center;
     align-items: center;
+    transition: all 1s cubic-bezier(.76,-0.01,.23,1);
 }
 
 .loading__img{
