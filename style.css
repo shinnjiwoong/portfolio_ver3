@@ -507,11 +507,9 @@ hr{
     transform: translateY(-50%);
     transition: all 0.2s cubic-bezier(.76,-0.01,.23,1);
 }
-.project-img:hover .project-cursor-left{
-    opacity: 100%;
-}
 .project-cursor-left:hover, .project-cursor-right:hover{
     opacity: 100%;
+    filter: invert(100%);
 }
 .project-img{
     width: 100%;
@@ -821,6 +819,7 @@ hr{
     font-family: 'ChosunSg';
     font-size: 1rem;
     font-weight: bold;
+    line-height: 200%;
 }
 @media screen and (max-width: 886px),(max-height: 687px){
     body{

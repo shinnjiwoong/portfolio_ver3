@@ -51,8 +51,8 @@ const intro_links_btn = document.querySelector(".intro-project-timeline-btn");
 
 media_screen_container.addEventListener('mousemove', (e)=>{
     let red = e.clientX * 255 / window.innerWidth;
-    let blue = e.clientY * 255 / window.innerHeight;
-    let green = (red + blue) * 255 / 510;
+    let green = e.clientY * 255 / window.innerHeight;
+    let blue = (red + green) * 255 / 510;
     media_screen_container.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
     media_screen_notice.style.color = `rgb(${255 - red}, ${255 - green}, ${255 - blue})`;
 })
