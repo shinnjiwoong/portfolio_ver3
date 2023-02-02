@@ -248,7 +248,12 @@ intro_work_btn.addEventListener("click", async ()=>{
     await hideIntroContents();
     await setPageIndex(1);
     await setPageNum();
-    setTimeout(await change_projects(1), 2000);
+    loading__container.style.display = 'flex';
+    loading__container.style.opacity = '100%'
+    setTimeout(async function(){
+        await change_projects(1)}, 2000);
+        loading__container.style.opacity = '0%'
+        loading__container.style.display = 'none';
 });
 // 프로젝트 전환
 async function setPageIndex(num){
@@ -277,8 +282,8 @@ async function change_projects(num){
         }
     }else{
         for(let i = 0 ; i <4; i++){
-            sections[i].style.display = "inline-block";
             await showProject(sections[i], project_arr[4*(num-1)+i]);
+            sections[i].style.display = "inline-block";
         }
     }
     
@@ -511,7 +516,11 @@ bottom_bar_prev_btn.addEventListener('click', async ()=>{
     }
     await setPageIndex(changing_index);
     await setPageNum()
+    loading__container.style.display = 'flex';
+    loading__container.style.opacity = '100%'
     await change_projects(changing_index);
+    loading__container.style.opacity = '0%'
+    loading__container.style.display = 'none';
 })
 
 bottom_bar_next_btn.addEventListener('click', async ()=>{
@@ -526,7 +535,11 @@ bottom_bar_next_btn.addEventListener('click', async ()=>{
     }
     await setPageIndex(changing_index);
     await setPageNum();
+    loading__container.style.display = 'flex';
+    loading__container.style.opacity = '100%'
     await change_projects(changing_index);
+    loading__container.style.opacity = '0%'
+    loading__container.style.display = 'none';
 })
 
 // 프로젝트 이미지 및  비디오 소스의 데이터 가져오기 

@@ -34,7 +34,8 @@ const intro_bg_bottom = document.querySelector(".intro-bg-bottom-container");
 const music_container = document.querySelector('.music-container');
 const bio_container = document.querySelector(".bio-container");
 const links_container = document.querySelector('.links-container');
-
+const loading__container = document.querySelector('.loading__page__container');
+const loading__img = document.querySelector('.loading__img');
 
 // BTNS
 const intro_bio_btn = document.querySelector(".intro-project-bio-btn");
@@ -56,6 +57,14 @@ media_screen_container.addEventListener('mousemove', (e)=>{
     media_screen_container.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
     media_screen_notice.style.color = `rgb(${255 - red}, ${255 - green}, ${255 - blue})`;
 })
+let loading_deg = 0;
+setInterval(function(){
+    loading_deg = loading_deg + 45;
+    if(loading_deg == 360){
+        loading__deg = 0;
+    }
+    loading__img.style.transform = `rotate(${loading_deg}deg)`;
+}, 1000);
 
 // MUSIC BAR ANIMATIONS
 track_titles.forEach(t => t.addEventListener('click', (e)=>{
@@ -164,6 +173,7 @@ let window_width = window.innerWidth;
 let window_height = window.innerHeight;
 
 window.addEventListener('click', handleWindowClick);
+
 function handleWindowClick(){
     randomColorChange(intro_title_container)
     randomColorChange(intro_top_right_bg)
