@@ -488,7 +488,7 @@ hr{
     width: 30px;
     height: 30px;
     z-index: 100;
-    opacity: 20%;
+    opacity: 50%;
     top: 50%;
     left: 0%;
     transform: translateY(-50%);
@@ -501,7 +501,7 @@ hr{
     height: 30px;
     z-index: 100;
     margin-right: 2rem;
-    opacity: 20%;
+    opacity: 50%;
     top: 50%;
     right: 0%;
     transform: translateY(-50%);

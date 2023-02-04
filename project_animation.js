@@ -1,3 +1,5 @@
+// ****************** 프로젝트 JSON ******************
+
 let mindcraft = {
     "name" : "MINDCRAFT",
     "project_num" : "001",
@@ -163,7 +165,6 @@ let shinnjiwoong = {
     "description_kr" : "<span style='font-size: 1rem'>Project for </span> : Myself (personal work)",
     "description_en" : "- Web Development & Design : Jiwoong Shinn<br>- Music : Jiwoong Shinn"
 }
-
 let exodus = {
     "name" : "EXODUS",
     "project_num" : "015",
@@ -179,27 +180,30 @@ let exodus = {
 
 
 
-// VAR
+// DOM SELECTOR
+
 const project_page_container = document.querySelector(".project-page-container")
-const left_loading_bar = document.querySelector(".left-loading-bar")
-const right_loading_bar = document.querySelector(".right-loading-bar")
 const project_page_number = document.querySelector('.project-page-number');
 const bottom_bar_prev_btn = document.querySelector('.bottom-bar-prev-btn');
 const bottom_bar_next_btn = document.querySelector('.bottom-bar-next-btn');
-const scope_music_color = "rgb(255, 0, 0)";
-const scope_programming_color = "rgb(0, 255, 255)";
-const scope_mixset_color = "rgb(249, 249, 0)";
-const scope_design_color = "rgb(8, 0, 255)";
-// PROJECT SECTIONS
 const sec_1 = document.querySelector(".sec-1");
 const sec_2 = document.querySelector(".sec-2");
 const sec_3 = document.querySelector(".sec-3");
 const sec_4 = document.querySelector(".sec-4");
-let sections = [sec_1, sec_2, sec_3, sec_4];
 
-let project_arr = [shinnjiwoong, exodus, gnyang_2022, picit, reservoir_dogs, hyndai_casper, onerm, kasina_seongsu, umm_1, kasina_kaffe, altgal_simple, artificial_object, rem, postcorona, datura, mindcraft];
-let whole_page_num = getPageNum();
+// 일반 변수
+
+const scope_music_color = "rgb(255, 0, 0)";
+const scope_programming_color = "rgb(0, 255, 255)";
+const scope_mixset_color = "rgb(249, 249, 0)";
+const scope_design_color = "rgb(8, 0, 255)";
 let page_var = 1;
+
+// ARRAY 
+
+let sections = [sec_1, sec_2, sec_3, sec_4];
+let project_arr = [shinnjiwoong, exodus, gnyang_2022, picit, reservoir_dogs, hyndai_casper, onerm, kasina_seongsu, umm_1, kasina_kaffe, altgal_simple, artificial_object, rem, postcorona, datura, mindcraft];
+
 
 function getPageNum(){
     console.log(project_arr.length)
@@ -209,6 +213,8 @@ function getPageNum(){
         return parseInt(project_arr.length / 4)
     }
 }
+
+let whole_page_num = getPageNum();
 // FUNCTIONS
 
 // PROJECT HOME BTN
@@ -244,18 +250,7 @@ project_home_btn.addEventListener('click', async ()=>{
 })
 
 
-intro_work_btn.addEventListener("click", async ()=>{
-    await hideIntroContents();
-    await setPageIndex(1);
-    await setPageNum();
-    loading__container.style.display = 'flex';
-    loading__container.style.opacity = '100%'
-    setTimeout(async function(){
-        await change_projects(1)
-        loading__container.style.opacity = '0%'
-        loading__container.style.display = 'none';
-    }, 2000);
-});
+
 // 프로젝트 전환
 async function setPageIndex(num){
     if(num < 1){
@@ -390,15 +385,6 @@ async function showProject(e,p){
             let comma = document.createElement('p');
             scope_node.classList.add('project-scope');
             comma.classList.add('project-scope');
-            // if(p.scope[i] == "music/sound"){
-            //     scope_node.style.color = scope_music_color;
-            // }else if(p.scope[i] == "programming"){
-            //     scope_node.style.color = scope_programming_color;
-            // }else if(p.scope[i] == "mixset"){
-            //     scope_node.style.color = scope_mixset_color;
-            // }else if(p.scope[i] == "design"){
-            //     scope_node.style.color = scope_design_color;
-            // }
             scope_node.style.fontWeight = "lighter";
             scope_node.innerText = p.scope[i]
             comma.innerText = ','
@@ -529,8 +515,6 @@ bottom_bar_prev_btn.addEventListener('click', async ()=>{
 
 bottom_bar_next_btn.addEventListener('click', async ()=>{
     let changing_index = await getPageIndex();
-    // loading__container.style.display = 'flex';
-    // loading__container.style.opacity = '100%'
     if(project_arr.length % 4 == 0 && changing_index == project_arr.length / 4){
         changing_index = 1;
     }else if(project_arr.length % 4 != 0 && changing_index == parseInt(project_arr.length / 4) + 1){

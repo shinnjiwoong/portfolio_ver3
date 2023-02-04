@@ -7,6 +7,7 @@ var music5 = new Audio("assets/music/music_5.mp3");
 const music__container = document.querySelector('.music__container');
 const music__play__btn = document.querySelector('.play')
 const music__pause__btn = document.querySelector('.pause')
+const track_titles = document.querySelectorAll('.track-title');
 
 let music_arr = [music1, music2, music3, music4, music5];
 let current_track;
