@@ -940,19 +940,3 @@ hr{
 .music__btn:hover{
     filter: invert(100%);
 }
-
-/* LOADING PAGE */
-.loading__page__container{
-    width: 100vw;
-    height: 100vh;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    transition: all 1s cubic-bezier(.76,-0.01,.23,1);
-}
-
-.loading__img{
-    width: 30px;
-    height: 30px;
-    transition: all 1s cubic-bezier(.76,-0.01,.23,1);
-}
