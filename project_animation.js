@@ -283,9 +283,6 @@ async function setPageNum(){
     project_page_number.innerText = `${page} / ${whole_page_num}`
 }
 async function change_projects(num){
-    console.log(whole_page_num)
-    loading__container.style.display = 'flex';
-    loading__container.style.opacity = '100%'
     if(num == parseInt(project_arr.length/4) + 1){
         let rest = project_arr.length % 4;
         for(let i = 0; i < rest; i++){
