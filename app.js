@@ -21,8 +21,6 @@ const intro_bg_bottom = document.querySelector(".intro-bg-bottom-container");
 const music_container = document.querySelector('.music-container');
 const bio_container = document.querySelector(".bio-container");
 const links_container = document.querySelector('.links-container');
-const loading__container = document.querySelector('.loading__page__container');
-const loading__img = document.querySelector('.loading__img');
 const intro_bio_btn = document.querySelector(".intro-project-bio-btn");
 const intro_work_btn = document.querySelector(".intro-project-overview-btn");
 const intro_music_btn = document.querySelector(".intro-project-links-btn");
@@ -131,17 +129,6 @@ intro_esc_btn.forEach((e)=>{
 
 
 // ********** FUNCTIONS *************
-
-// 로딩화면의 애니메이션 관련 함수
-
-setInterval(function(){
-    loading_deg = loading_deg + 45;
-    if(loading_deg == 360){
-        loading__deg = 0;
-    }
-    loading__img.style.transform = `rotate(${loading_deg}deg)`;
-}, 1000);
-
 
 
 
