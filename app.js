@@ -108,12 +108,8 @@ intro_work_btn.addEventListener("click", async ()=>{
     await hideIntroContents();
     await setPageIndex(1);
     await setPageNum();
-    loading__container.style.display = 'flex';
-    loading__container.style.opacity = '100%'
     setTimeout(async function(){
         await change_projects(1)
-        loading__container.style.opacity = '0%'
-        loading__container.style.display = 'none';
     }, 2000);
 });
 
