@@ -166,7 +166,7 @@ let picit = {
     "video" : ['true', "assets/project_videos/VID__PICIT.mp4"],
     "link" : ["https://github.com/shinnjiwoong/PicIt.com", "Project Info"],
     "description_kr" : "<span style='text-decoration: underline 1px'>Personal Work</span>",
-    "description_en" : "Web Development : Jiwoong Shinn, Sungwon Yuk <br>Web Design : Jiwoong Shinn"
+    "description_en" : "Web Development : Jiwoong Shinn <br>Web Design : Jiwoong Shinn"
 }
 let gnyang_2022 = {
     "name" : "GNYANG_20_21",

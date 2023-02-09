@@ -89,7 +89,7 @@ media_screen_container.addEventListener('mousemove', (e)=>{
 
 intro_bio_btn.addEventListener("click", ()=>{
     intro_bio_btn.style.display = 'none'
-    bio_container.style.display = 'block'
+    bio_container.style.display = 'flex'
 })
 
 intro_music_btn.addEventListener('click', ()=>{

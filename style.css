@@ -233,6 +233,9 @@ body{
 }
 .bio-container{
     display: none;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-items: center;
     width: 90%;
     height: 90%;
     overflow-y: scroll;
@@ -262,6 +265,7 @@ body{
     transform: rotate(-45deg) translateY(-50%);
 }
 .bio-english{
+    width: 100%;
     line-height: 150%;
     padding: 0.5rem;
     font-family: 'ChosunSg';
@@ -270,6 +274,7 @@ body{
     /* float: right; */
 }
 .bio-korean{
+    width: 100%;
     line-height: 150%;
     font-family: 'ChosunSg';
     padding: 0.5rem;
@@ -513,6 +518,7 @@ hr{
     width: 50%;
     height: 100%;
     opacity: 100%;
+    overflow-y: scroll;
     /* background-color: black; */
 }
 
@@ -654,7 +660,7 @@ hr{
 }
 .project-title{
     font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: lighter;
     text-decoration: underline 1px;
 }
@@ -702,9 +708,17 @@ hr{
     font-weight: lighter;
     border-bottom: 1px solid;
 }
+.project-sub-info-container{
+    width: 80%;
+    height: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 .project-desc-container{
     width: 100%;
-    height: 50%;
+    height: 30%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -713,10 +727,10 @@ hr{
 }
 .project-desc-kr{
     font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: lighter;
-    padding-bottom: 1rem;
     width: 85%;
+    height: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -768,21 +782,22 @@ hr{
     color: white;
 }
 .project-scope-container{
-    font-family: 'ChosunSg';
-    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
     font-weight: lighter;
     width: 100%;
-    height: 10%;
+    height: 5%;
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-bottom: 0.1rem;
     /* text-decoration: underline 1px; */
     /* padding-top: 1rem; */
     /* background-color: #f1f1f1; */
 }
 .project-scope{
-    font-family: 'ChosunSg';
-    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
     font-weight: lighter;
     text-decoration: none;
     padding: 0rem 0.1rem;
