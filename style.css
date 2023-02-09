@@ -17,6 +17,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 @font-face {
     font-family: 'NEXON Lv2 Gothic';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
@@ -93,10 +94,17 @@ body{
     top: 0%;
     left: 50%;
 }
+
+.intro-contents-container{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    /* z-index: -100; */
+}
 /* TOP CONTAINER */
 .top-container{
-    height: 50vh;
-    width: 100vw;
+    height: 50%;
+    width: 100%;
     display: flex;
     transition: opacity 0.5s cubic-bezier(.76,-0.01,.23,1);
     /* background-color: var(--bg-color); */
@@ -115,23 +123,24 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-x: scroll;
 }
 .intro-project-overview-btn, .intro-project-timeline-btn{
     font-family: 'LeferiPoint-WhiteObliqueA';
     font-weight: lighter;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
 }
 .intro-project-overview-btn:hover, .intro-project-timeline-btn:hover{
     color: #f1f1f1;
     background-color: rgb(25, 25, 25);
-    text-decoration: underline;
+    text-decoration: underline 1px;
 }
 
 
 /* BOTTOM CONTAINER */
 .bottom-container {
-    height: 50vh;
-    width: 100vw;
+    height: 50%;
+    width: 100%;
     display: flex;
     transition: opacity 0.5s cubic-bezier(.76,-0.01,.23,1);
 }
@@ -145,12 +154,12 @@ body{
 .intro-project-links-btn, .intro-project-bio-btn{
     font-family: 'LeferiPoint-WhiteObliqueA';
     font-weight: lighter;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
 }
 .intro-project-links-btn:hover, .intro-project-bio-btn:hover{
     color: #f1f1f1;
     background-color: rgb(25, 25, 25);
-    text-decoration: underline;
+    text-decoration: underline 1px;
 }
 .music-container{
     display: none;
@@ -220,10 +229,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-y: scroll;
 }
 .bio-container{
     display: none;
     width: 90%;
+    height: 90%;
+    overflow-y: scroll;
 }
 .esc-container{
     position: absolute;
@@ -365,15 +377,18 @@ hr{
     transition: 0.2s cubic-bezier(.76,-0.01,.23,1);
 }
 .links-container{
+    width: 90%;
     display: none;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
 }
 .links-list{
-    display: flex;
+    /* display: flex; */
     list-style: none;
 }
 .links-list li{
+    display: flex;
+    justify-content: center;
     margin: 1rem;
     transition: all 0.15s cubic-bezier(.76,-0.01,.23,1);
 }
@@ -381,7 +396,7 @@ hr{
     color: var(--font-color-black);
     font-family: 'LeferiPoint-WhiteObliqueA';
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     font-weight: lighter;
     /* padding: 0rem 0.5rem; */
     cursor: none;
@@ -390,7 +405,6 @@ hr{
 .links-list li:hover .link{
     color: white;
     text-decoration: underline 1px white;
-    font-size: 1.5rem;
 }
 /* .fa-brands{
     font-size: ;
@@ -577,7 +591,8 @@ hr{
     height: 50%;
     overflow-y: scroll;
     display: none;
-    align-items: center;
+    justify-content: center;
+    /* align-items: center; */
     flex-wrap: wrap;
     transition: all 0.3s cubic-bezier(.76,-0.01,.23,1);
     /* background-color: aqua; */
@@ -631,29 +646,33 @@ hr{
 }
 .project-title-container{
     width: 100%;
+    height: 20%;
     /* padding-top: 3rem; */
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .project-title{
-    font-family: 'ChosunSg';
-    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
     font-weight: lighter;
-    border-bottom: 1px solid;
+    text-decoration: underline 1px;
 }
 .project__format__container{
     width: 100%;
+    height: 8%;
     display: block;
     position: absolute;
     bottom: 0%;
-    padding-bottom: 0.5rem;
+    /* padding-bottom: 0.5rem; */
 }
 .project__format{
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
     font-family: 'ChosunSg';
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: lighter;
     padding: 0.2rem;
     transition: all 0.2s cubic-bezier(.76,-0.01,.23,1);
@@ -663,7 +682,7 @@ hr{
     justify-content: center;
     width: 100%;
     font-family: 'ChosunSg';
-    font-size: 1.1rem;
+    font-size: 10%;
     font-weight: lighter;
 
 }
@@ -673,18 +692,19 @@ hr{
 .project-index-container{
     width: 100%;
     /* padding-top: 1rem; */
-    display: flex;
+    display: none;
     justify-content: center;
     
 }
 .project-index{
-    font-family: 'LeferiPoint-WhiteObliqueA';
+    font-family: 'ChosunSg';
     font-size: 1.2rem;
     font-weight: lighter;
     border-bottom: 1px solid;
 }
 .project-desc-container{
     width: 100%;
+    height: 50%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -692,11 +712,9 @@ hr{
     
 }
 .project-desc-kr{
-    font-family: 'ChosunSg';
-    font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
     font-weight: lighter;
-    /* text-decoration: underline; */
-    /* padding: 1rem 0rem; */
     padding-bottom: 1rem;
     width: 85%;
     display: flex;
@@ -718,12 +736,13 @@ hr{
 }
 .project-link-container{
     width: 100%;
+    height: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .project-link{
-    font-family: 'LeferiPoint-WhiteObliqueA';
+    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     font-weight: lighter;
     text-decoration: none;
@@ -731,6 +750,18 @@ hr{
     margin: 0rem 0.5rem;
     z-index: 50;
     color: black;
+    transition: all 0.2s cubic-bezier(.76,-0.01,.23,1);
+}
+.project-link-comma{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+    text-decoration: none;
+    padding-top: 0.3rem;
+    margin: 0rem 0.5rem;
+    z-index: 50;
+    color: black;
+    transition: all 0.2s cubic-bezier(.76,-0.01,.23,1);
 }
 .project-link:hover{
     text-decoration: 1px underline;
@@ -741,9 +772,10 @@ hr{
     font-size: 1rem;
     font-weight: lighter;
     width: 100%;
+    height: 10%;
     display: flex;
     justify-content: center;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.1rem;
     /* text-decoration: underline 1px; */
     /* padding-top: 1rem; */
     /* background-color: #f1f1f1; */
@@ -879,7 +911,7 @@ hr{
     font-weight: bold;
     line-height: 200%;
 }
-@media screen and (max-width: 1300px),(max-height: 687px){
+/* @media screen and (max-width: 1300px),(max-height: 687px){
     body{
         overflow-y: scroll;
         overflow-x: hidden;
@@ -905,7 +937,7 @@ hr{
     .music__btn{
         display: none;
     }
-}
+} */
 
 /* MUSIC PLAYER */
 
