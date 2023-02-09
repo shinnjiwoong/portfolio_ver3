@@ -85,7 +85,7 @@ let kasina_kaffe = {
     "project_num" : "007",
     "year" : "2022",
     "scope" : ["Music"],
-    "represent_source" : ["assets/project_source/IMG__KAFFE__1.png", "assets/project_source/IMG__KAFFE__2.png", "assets/project_source/IMG__KAFFE__2.png", "assets/project_source/IMG__KAFFE__4.png"],
+    "represent_source" : ["assets/project_source/IMG__KAFFE__1.png", "assets/project_source/IMG__KAFFE__2.png", "assets/project_source/IMG__KAFFE__3.png", "assets/project_source/IMG__KAFFE__4.png"],
     "video" : ['false'],
     "link" : ["https://www.kasina.co.kr/goods/event_sale.php?sno=126", "Merchandise Shop"],
     "description_kr" : "Worked with &nbsp; <span style='text-decoration: underline 1px'>Kasina</span>",
