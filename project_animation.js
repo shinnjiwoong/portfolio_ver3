@@ -166,7 +166,7 @@ let picit = {
     "video" : ['true', "assets/project_videos/VID__PICIT.mp4"],
     "link" : ["https://github.com/shinnjiwoong/PicIt.com", "Project Info"],
     "description_kr" : "<span style='text-decoration: underline 1px'>Personal Work</span>",
-    "description_en" : "Web Development : Jiwoong Shinn <br>Web Design : Jiwoong Shinn"
+    "description_en" : "Web Development & Design : Jiwoong Shinn"
 }
 let gnyang_2022 = {
     "name" : "GNYANG_20_21",
@@ -377,7 +377,7 @@ async function showProject(e,p){
         // project_img.src = p.represent_source[0];
         await showImg(p, project_img, 0);
         project_title.innerText = p.name;
-        // project_index.innerText = `${p.project_num} - ${p.year}`
+        project_index.innerText = `${p.year}`
         project_desc_kr.innerHTML = p.description_kr;
         project_desc_en.innerHTML = p.description_en;
         project_link_container.innerHTML = "";
