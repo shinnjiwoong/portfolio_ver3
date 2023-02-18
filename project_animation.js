@@ -5,7 +5,7 @@ let mindcraft = {
     "form" : "EP",
     //  - 6 Songs
     "project_num" : "001",
-    "year" : "2019",
+    "year" : "2019, EP, 6 songs, 19:27",
     "scope" : ["Music"],
     "represent_source" : ["assets/project_source/IMG__MINDCRAFT__1.png", "assets/project_source/IMG__MINDCRAFT__2.png"],
     "video" : ['false'],
@@ -15,10 +15,10 @@ let mindcraft = {
 }
 let datura = {
     "name" : "DATURA : TESTTAPE",
-    "form" : "Album",
+    "form" : "EP",
     //  - 4 Songs
     "project_num" : "002",
-    "year" : "2019",
+    "year" : "2019, EP, 4 songs, 9:20",
     "scope" : ["Music", "Mix & Master"],
     "represent_source" : ["assets/project_source/IMG__DATURA__1.png", "assets/project_source/IMG__DATURA__2.png", "assets/project_source/IMG__DATURA__3.png"],
     "video" : ['false'],
@@ -31,7 +31,7 @@ let postcorona = {
     "form" : "Album",
     //  - 7 Songs
     "project_num" : "003",
-    "year" : "2020",
+    "year" : "2020, Album, 7 songs, 19:55",
     "scope" : ["Music", "Mix & Master"],
     "represent_source" : ["assets/project_source/IMG__OC__1.png", "assets/project_source/IMG__OC__2.png", "assets/project_source/IMG__OC__3.png"],
     "video" : ['false'],
@@ -41,10 +41,10 @@ let postcorona = {
 }
 let rem = {
     "name" : "REM",
-    "form" : "Album",
+    "form" : "EP",
     //  - 5 Songs
     "project_num" : "004",
-    "year" : "2021",
+    "year" : "2021, EP, 5 songs, 13:04",
     "scope" : ["Music", "Mix & Master"],
     "represent_source" : ["assets/project_source/IMG__REM__1.png", "assets/project_source/IMG__REM__2.png", "assets/project_source/IMG__REM__3.png"],
     "video" : ['false'],
@@ -57,7 +57,7 @@ let artificial_object = {
     "form" : "Album",
     //  - 7 Songs
     "project_num" : "005",
-    "year" : "2021",
+    "year" : "2021, Album, 7 songs, 18:45",
     "scope" : ["Music", "Mix & Master"],
     "represent_source" : ["assets/project_source/IMG__AO__1.png", "assets/project_source/IMG__AO__2.png"],
     "video" : ['false'],
@@ -70,7 +70,7 @@ let altgal_simple = {
     "form" : "Exhibition",
     //  - 1 Song
     "project_num" : "006",
-    "year" : "2021",
+    "year" : "2021, Exhibition, 1 song, 4:37",
     "scope" : ["Music"],
     "represent_source" : ["assets/project_source/IMG__ALT__1.png", "assets/project_source/IMG__ALT__2.png"],
     "video" : ['false'],
@@ -83,7 +83,7 @@ let kasina_kaffe = {
     "form" : "Commercial Video",
     //  - 1 minute
     "project_num" : "007",
-    "year" : "2022",
+    "year" : "2022, Commercial Video, 1 minute",
     "scope" : ["Music"],
     "represent_source" : ["assets/project_source/IMG__KAFFE__1.png", "assets/project_source/IMG__KAFFE__2.png", "assets/project_source/IMG__KAFFE__3.png", "assets/project_source/IMG__KAFFE__4.png"],
     "video" : ['false'],
@@ -96,7 +96,7 @@ let umm_1 = {
     "form" : "Mixset",
     //  - 46 minutes
     "project_num" : "008",
-    "year" : "2022",
+    "year" : "2022, Mixset, 46 minutes",
     "scope" : ["Mixset", "Artwork"],
     "represent_source" : ["assets/project_source/IMG__UMM1__1.png", "assets/project_source/IMG__UMM1__2.png"],
     "video" : ['false'],
@@ -109,7 +109,7 @@ let kasina_seongsu = {
     "form" : "Commercial Video",
     //  - 57 seconds
     "project_num" : "009",
-    "year" : "2022",
+    "year" : "2022, Commercial Video, 57 seconds",
     "scope" : ["Music"],
     "represent_source" : ["assets/project_source/IMG__KAFFE__1.png"],
     "video" : ['true', "assets/project_videos/VID__KASINA__SS.mp4"],
@@ -122,7 +122,7 @@ let onerm = {
     "form" : "Commercial Video",
     //  - 49 seconds
     "project_num" : "010",
-    "year" : "2022",
+    "year" : "2022, Commercial Video, 49 seconds",
     "scope" : ["Music"],
     "represent_source" : ["assets/project_source/IMG__ONERM1__1.png", "assets/project_source/IMG__ONERM1__2.png"],
     "video" : ['true', "assets/project_videos/VID__ONERM__1_2.mp4"],
@@ -135,7 +135,7 @@ let hyndai_casper = {
     "form" : "Commercial Video",
     //  - 1 minute
     "project_num" : "011",
-    "year" : "2022",
+    "year" : "2022, Commercial Video, 1 minute",
     "scope" : ["Music"],
     "represent_source" : ["assets/project_source/IMG__CASPER__1.png", "assets/project_source/IMG__CASPER__2.png", "assets/project_source/IMG__CASPER__3.png"],
     "video" : ['true', "assets/project_videos/VID__CASPER_2.mp4"],
@@ -148,7 +148,7 @@ let reservoir_dogs = {
     "form" : "Mixset",
     //  - 1 hour 
     "project_num" : "012",
-    "year" : "2022",
+    "year" : "2022, Mixset, 1 hour",
     "scope" : ["Mixset", "Artwork", "Performance"],
     "represent_source" : ["assets/project_source/IMG__RESERVOIR__1.png", "assets/project_source/IMG__RESERVOIR__2.png", "assets/project_source/IMG__RESERVOIR__3.png"],
     "video" : ['false'],
@@ -160,7 +160,7 @@ let picit = {
     "name" : "PICIT",
     "form" : "Website",
     "project_num" : "013",
-    "year" : "2022",
+    "year" : "2022, Website",
     "scope" : ["Frontend & Backend Development", "Web Design"],
     "represent_source" : ["assets/project_source/IMG__PICIT__1.png", "assets/project_source/IMG__PICIT__2.png", "assets/project_source/IMG__PICIT__3.png", "assets/project_source/IMG__PICIT__4.png"],
     "video" : ['true', "assets/project_videos/VID__PICIT.mp4"],
@@ -173,7 +173,7 @@ let gnyang_2022 = {
     "form" : "EP",
     //  - 5 Songs
     "project_num" : "014",
-    "year" : "2022",
+    "year" : "2022, EP, 5 songs, 8:10",
     "scope" : ["Music"],
     "represent_source" : ["assets/project_source/IMG__GNY22__1.png", "assets/project_source/IMG__GNY22__2.png"],
     "video" : ['false', ""],
@@ -185,7 +185,7 @@ let shinnjiwoong = {
     "name" : "SHINNJIWOONG",
     "form" : "Website",
     "project_num" : "016",
-    "year" : "2023",
+    "year" : "2023, Website",
     "scope" : ["Frontend Development", "Web Design", "Music"],
     "represent_source" : ["assets/project_source/IMG__PORTFO__1.png", "assets/project_source/IMG__PORTFO__2.png", "assets/project_source/IMG__PORTFO__3.png", "assets/project_source/IMG__PORTFO__4.png"],
     "video" : ['true', "assets/project_videos/VID__PORTFO.mp4"],
@@ -198,7 +198,7 @@ let exodus = {
     "form" : "Video",
     //  - 5 minutes
     "project_num" : "015",
-    "year" : "2023",
+    "year" : "2023, 3D Animation, 5:03",
     "scope" : ["Music", "Sound Design"],
     "represent_source" : ["assets/project_source/IMG__EXODUS__1.png", "assets/project_source/IMG__EXODUS__2.png", "assets/project_source/IMG__EXODUS__3.png", "assets/project_source/IMG__EXODUS__4.png", "assets/project_source/IMG__EXODUS__5.png", "assets/project_source/IMG__EXODUS__6.png"],
     "video" : ['false', ""],
@@ -259,8 +259,14 @@ project_home_btn.addEventListener('click', async ()=>{
         intro_top_right_bg.style.backgroundColor = 'rgb(200, 200, 200)';
         intro_bottom.style.backgroundColor = 'rgb(200, 200, 200)';
         intro_bottom_right_bg.style.backgroundColor = 'white';
-        top_container.style.display = "flex";
-        bottom_container.style.display = "flex";
+        if(window.innerWidth < 1300 || window.innerHeight < 687){
+            top_container.style.display = "inline-block";
+            bottom_container.style.display = "inline-block";
+        }else{
+            top_container.style.display = "flex";
+            bottom_container.style.display = "flex";
+        }
+        
         // window.addEventListener('click', handleWindowClick);
         cursor_design.style.opacity = "100%"
         music_container.style.display = "none"
@@ -528,6 +534,7 @@ async function showProject(e,p){
         await showFront(project_front_container, project_back_container);
     })
 }
+
 
 // Changing projects
 bottom_bar_prev_btn.addEventListener('click', async ()=>{

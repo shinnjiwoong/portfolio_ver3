@@ -8,8 +8,6 @@ const bg_container = document.querySelector(".bg-container");
 const project_wrap = document.querySelector(".project-wrap");
 const intro_esc_btn = document.querySelectorAll(".intro-esc-btn");
 const project_home_btn = document.querySelector(".project-home-btn");
-const media_screen_container = document.querySelector(".media__screen__container");
-const media_screen_notice = document.querySelector(".media__screen__notice");
 const top_container = document.querySelector(".top-container");
 const bottom_container = document.querySelector(".bottom-container");
 const intro_title_container = document.querySelector('.intro-top-bg');
@@ -74,15 +72,6 @@ window.addEventListener("mousemove", async (e)=>{
             project_page_container.style.cursor = "grab"
             music__container.style.cursor = "grab"
     }
-})
-
-// 미디어 쿼리 사이즈 반응 코드
-media_screen_container.addEventListener('mousemove', (e)=>{
-    let red = e.clientX * 255 / window.innerWidth;
-    let green = e.clientY * 255 / window.innerHeight;
-    let blue = (red + green) * 255 / 510;
-    media_screen_container.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
-    media_screen_notice.style.color = `rgb(${255 - red}, ${255 - green}, ${255 - blue})`;
 })
 
 // 홈 화면의 각 버튼에 따른 반응 코드
