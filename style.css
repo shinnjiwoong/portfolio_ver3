@@ -17,37 +17,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 
-@font-face {
-    font-family: 'NEXON Lv2 Gothic';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'YESGothic-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/YESGothic-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'S-CoreDream-3Light';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
 @font-face {
     font-family: 'LeferiPoint-WhiteObliqueA';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteObliqueA.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-@font-face {
-    font-family: 'GothicA1-Light';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/GothicA1-Light.woff2') format('woff2');
-    font-weight: 100;
-    font-style: normal;
-}
+
 @font-face {
     font-family: 'ChosunSg';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunSg.woff') format('woff');
@@ -715,8 +698,6 @@ hr{
     font-family: 'Roboto', sans-serif;
     font-style: italic;
     font-size: 1.05rem;
-    font-weight: lighter;
-    /* padding: 1rem 0rem; */
     width: 85%;
     display: flex;
     justify-content: center;

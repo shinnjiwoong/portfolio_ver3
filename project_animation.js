@@ -5,7 +5,7 @@ let mindcraft = {
     "form" : "EP",
     //  - 6 Songs
     "project_num" : "001",
-    "year" : "2019, EP, 6 songs, 19:27",
+    "year" : "2019, EP, 6 songs",
     "scope" : ["Music"],
     "represent_source" : ["assets/project_source/IMG__MINDCRAFT__1.png", "assets/project_source/IMG__MINDCRAFT__2.png"],
     "video" : ['false'],
@@ -18,7 +18,7 @@ let datura = {
     "form" : "EP",
     //  - 4 Songs
     "project_num" : "002",
-    "year" : "2019, EP, 4 songs, 9:20",
+    "year" : "2019, EP, 4 songs",
     "scope" : ["Music", "Mix & Master"],
     "represent_source" : ["assets/project_source/IMG__DATURA__1.png", "assets/project_source/IMG__DATURA__2.png", "assets/project_source/IMG__DATURA__3.png"],
     "video" : ['false'],
@@ -31,7 +31,7 @@ let postcorona = {
     "form" : "Album",
     //  - 7 Songs
     "project_num" : "003",
-    "year" : "2020, Album, 7 songs, 19:55",
+    "year" : "2020, Album, 7 songs",
     "scope" : ["Music", "Mix & Master"],
     "represent_source" : ["assets/project_source/IMG__OC__1.png", "assets/project_source/IMG__OC__2.png", "assets/project_source/IMG__OC__3.png"],
     "video" : ['false'],
@@ -44,7 +44,7 @@ let rem = {
     "form" : "EP",
     //  - 5 Songs
     "project_num" : "004",
-    "year" : "2021, EP, 5 songs, 13:04",
+    "year" : "2021, EP, 5 songs",
     "scope" : ["Music", "Mix & Master"],
     "represent_source" : ["assets/project_source/IMG__REM__1.png", "assets/project_source/IMG__REM__2.png", "assets/project_source/IMG__REM__3.png"],
     "video" : ['false'],
@@ -57,7 +57,7 @@ let artificial_object = {
     "form" : "Album",
     //  - 7 Songs
     "project_num" : "005",
-    "year" : "2021, Album, 7 songs, 18:45",
+    "year" : "2021, Album, 7 songs",
     "scope" : ["Music", "Mix & Master"],
     "represent_source" : ["assets/project_source/IMG__AO__1.png", "assets/project_source/IMG__AO__2.png"],
     "video" : ['false'],
@@ -70,7 +70,7 @@ let altgal_simple = {
     "form" : "Exhibition",
     //  - 1 Song
     "project_num" : "006",
-    "year" : "2021, Exhibition, 1 song, 4:37",
+    "year" : "2021, Exhibition, participated with 1 song",
     "scope" : ["Music"],
     "represent_source" : ["assets/project_source/IMG__ALT__1.png", "assets/project_source/IMG__ALT__2.png"],
     "video" : ['false'],
@@ -166,14 +166,14 @@ let picit = {
     "video" : ['true', "assets/project_videos/VID__PICIT.mp4"],
     "link" : ["https://github.com/shinnjiwoong/PicIt.com", "Project Info"],
     "description_kr" : "<span style='text-decoration: underline 1px'>Personal Work</span>",
-    "description_en" : "Web Development & Design : Jiwoong Shinn"
+    "description_en" : "Frontend Development : Jiwoong Shinn & Sungwon Yuk <br>Backend Development : Jiwoong Shinn <br>Web Design : Jiwoong Shinn"
 }
 let gnyang_2022 = {
     "name" : "GNYANG_20_21",
     "form" : "EP",
     //  - 5 Songs
     "project_num" : "014",
-    "year" : "2022, EP, 5 songs, 8:10",
+    "year" : "2022, EP, 5 songs",
     "scope" : ["Music"],
     "represent_source" : ["assets/project_source/IMG__GNY22__1.png", "assets/project_source/IMG__GNY22__2.png"],
     "video" : ['false', ""],
@@ -259,6 +259,7 @@ project_home_btn.addEventListener('click', async ()=>{
         intro_top_right_bg.style.backgroundColor = 'rgb(200, 200, 200)';
         intro_bottom.style.backgroundColor = 'rgb(200, 200, 200)';
         intro_bottom_right_bg.style.backgroundColor = 'white';
+
         if(window.innerWidth < 1300 || window.innerHeight < 687){
             top_container.style.display = "inline-block";
             bottom_container.style.display = "inline-block";
