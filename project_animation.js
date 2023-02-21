@@ -164,7 +164,7 @@ let picit = {
     "scope" : ["Frontend & Backend Development", "Web Design"],
     "represent_source" : ["assets/project_source/IMG__PICIT__1.png", "assets/project_source/IMG__PICIT__2.png", "assets/project_source/IMG__PICIT__3.png", "assets/project_source/IMG__PICIT__4.png"],
     "video" : ['true', "assets/project_videos/VID__PICIT.mp4"],
-    "link" : ["https://github.com/shinnjiwoong/PicIt.com", "Project Info"],
+    "link" : ["https://github.com/shinnjiwoong/PicIt.com", "About Project"],
     "description_kr" : "<span style='text-decoration: underline 1px'>Personal Work</span>",
     "description_en" : "Frontend Development : Jiwoong Shinn & Sungwon Yuk <br>Backend Development : Jiwoong Shinn <br>Web Design : Jiwoong Shinn"
 }
@@ -189,7 +189,7 @@ let shinnjiwoong = {
     "scope" : ["Frontend Development", "Web Design", "Music"],
     "represent_source" : ["assets/project_source/IMG__PORTFO__1.png", "assets/project_source/IMG__PORTFO__2.png", "assets/project_source/IMG__PORTFO__3.png", "assets/project_source/IMG__PORTFO__4.png"],
     "video" : ['true', "assets/project_videos/VID__PORTFO.mp4"],
-    "link" : ["", ""],
+    "link" : ["https://github.com/shinnjiwoong/shinnjiwoong.com", "About Project"],
     "description_kr" : "<span style='text-decoration: underline 1px'>Personal Work</span>",
     "description_en" : "Web Development & Design : Jiwoong Shinn<br>Music : Jiwoong Shinn"
 }
