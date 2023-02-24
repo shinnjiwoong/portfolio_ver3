@@ -196,7 +196,6 @@ let shinnjiwoong = {
 let exodus = {
     "name" : "EXODUS",
     "form" : "Video",
-    //  - 5 minutes
     "project_num" : "015",
     "year" : "2023, 3D Animation, 5:03",
     "scope" : ["Music", "Sound Design"],

@@ -1,15 +1,14 @@
-var music1 = new Audio("assets/music/music_1.mp3");
-var music2 = new Audio("assets/music/music_2.mp3");
-var music3 = new Audio("assets/music/music_3.mp3");
-var music4 = new Audio("assets/music/music_4.mp3");
-var music5 = new Audio("assets/music/music_5.mp3");
+var music1 = new Audio("assets/music/sjw__loop__2.mp3");
+var music2 = new Audio("assets/music/sjw__loop__1.mp3");
+var music3 = new Audio("assets/music/Crayon (demo 2022).mp3");
+var music4 = new Audio("assets/music/Computer Luv (demo).mp3");
 
 const music__container = document.querySelector('.music__container');
 const music__play__btn = document.querySelector('.play')
 const music__pause__btn = document.querySelector('.pause')
 const track_titles = document.querySelectorAll('.track-title');
 
-let music_arr = [music1, music2, music3, music4, music5];
+let music_arr = [music1, music2, music3, music4];
 let current_track;
 let current_sec = 0;
 
