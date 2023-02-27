@@ -180,8 +180,9 @@ body{
 }
 .music-introduction{
     font-family: 'ChosunSg';
+    line-height: 150%;
     padding: 0.5rem 0rem;
-    font-size: 1rem;
+    font-size: 1vw;
 }
 .tracklist{
     list-style: none;
@@ -285,7 +286,7 @@ body{
     /* padding: 0.5rem; */
     /* color: rgb(25, 25, 25); */
     /* float: right; */
-    font-size: 1.2vw;
+    font-size: 1.1vw;
     font-weight: 300;
     display: inline-block;
 }
@@ -296,7 +297,7 @@ body{
     /* padding: 0.5rem; */
     color: black;
     /* float: right; */
-    font-size: 1.2vw;
+    font-size: 1.1vw;
     font-weight: 300;
     display: inline-block;
 }
