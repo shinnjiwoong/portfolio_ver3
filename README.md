@@ -13,6 +13,7 @@
 
 
 ---
+https://user-images.githubusercontent.com/109443641/221835931-5b10014a-f9d3-4ba8-b0ea-2946e092b9e4.mp4
 
  ### 👀 Overview / 개요
  #### 1. 달성목표
@@ -28,16 +29,16 @@
 
  ### 👀 Detail / 구현화면
 **메인화면**
-<img width="1440" alt="sjw__1" src="https://user-images.githubusercontent.com/109443641/220217385-44541540-0f5b-4bec-abb2-f3edbc2795cd.png">
+<img width="1440" alt="IMG__SJW_1" src="https://user-images.githubusercontent.com/109443641/221836350-9a5d50ed-ce97-47ee-a4b8-5c88602cc804.png">
 
 **메인화면 인터랙션**
-<img width="1440" alt="sjw__2" src="https://user-images.githubusercontent.com/109443641/220217389-0f056298-09d0-4d03-aded-dd9f5c273a00.png">
+![IMG__SJW_2](https://user-images.githubusercontent.com/109443641/221836421-f85ecc51-dbaf-4380-9d7e-c39d23416e4c.png)
 
 **프로젝트 화면**
-<img width="1440" alt="sjw__3" src="https://user-images.githubusercontent.com/109443641/220217392-eaa23192-8e74-4269-bb56-c2a02793db5e.png">
+<img width="1440" alt="IMG__SJW_3" src="https://user-images.githubusercontent.com/109443641/221836361-91791588-c277-4c31-852c-2b7931ad50bd.png">
 
 **프로젝트 화면 인터랙션**
-<img width="1440" alt="sjw__4" src="https://user-images.githubusercontent.com/109443641/220217401-c5c2e3ec-950e-4d26-b9c3-0b95bfd6ec5e.png">
+<img width="1440" alt="IMG__SJW_4" src="https://user-images.githubusercontent.com/109443641/221836364-ccef6d3a-9757-4c2b-8e81-667755c585ff.png">
 
 --- 
  ### 👀 Improvements / 개선사항
