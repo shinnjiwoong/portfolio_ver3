@@ -13,7 +13,8 @@
 
 
 ---
-https://user-images.githubusercontent.com/109443641/221452808-f75ff476-5d2f-437a-8dea-543a54459600.mp4
+https://user-images.githubusercontent.com/109443641/221835931-5b10014a-f9d3-4ba8-b0ea-2946e092b9e4.mp4
+
  ### 👀 Overview / 개요
  #### 1. 달성목표
   *이 프로젝트를 통해서 달성하고 싶었던 목표는 무엇이었는가?*
