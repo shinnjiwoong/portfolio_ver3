@@ -7,11 +7,11 @@ let mindcraft = {
     "project_num" : "001",
     "year" : "2019, EP, 6 songs",
     "scope" : ["Music"],
-    "represent_source" : ["assets/project_source/IMG__MINDCRAFT__1.png", "assets/project_source/IMG__MINDCRAFT__2.png"],
+    "represent_source" : ["assets/project_source/IMG__MC_1.png", "assets/project_source/IMG__MC_2.png"],
     "video" : ['false'],
     "link" : ["https://soundcloud.com/montikayoti/sets/mindcraft", 'Listen'],
     "description_kr" : "<span style='text-decoration: underline 1px'>Personal Work</span>",
-    "description_en" : "Cover Design : Sicky Cho <br>Music : Jiwoong Shinn <br>Mixing & Mastering : Jiwoong Shinn "
+    "description_en" : "Cover Design : Sicky Cho <br>Music : Jiwoong Shinn (Monti Kayoti) "
 }
 let datura = {
     "name" : "DATURA : TESTTAPE",
@@ -20,11 +20,11 @@ let datura = {
     "project_num" : "002",
     "year" : "2019, EP, 4 songs",
     "scope" : ["Music", "Mix & Master"],
-    "represent_source" : ["assets/project_source/IMG__DATURA__1.png", "assets/project_source/IMG__DATURA__2.png", "assets/project_source/IMG__DATURA__3.png"],
+    "represent_source" : ["assets/project_source/IMG__DATURA_1.png", "assets/project_source/IMG__DATURA_2.png", "assets/project_source/IMG__DATURA_3.png"],
     "video" : ['false'],
     "link" : ["https://open.spotify.com/album/6wumkYIzwCb4HC75H6KqDy?si=F6uUCIDJRuqSj8Qon8KLEQ", "Listen", "https://youtu.be/gqTXPMBMY0o", "TU + DA MV"],
     "description_kr" : "Worked with &nbsp; <span style='text-decoration: underline 1px'>Wolf Kooky</span>",
-    "description_en" : "Vocal : Wolf Kooky <br>Video Production : 17oz <br>Music : Jiwoong Shinn <br>Mixing & Mastering : Jiwoong Shinn "
+    "description_en" : "Vocal : Wolf Kooky <br>Video Production : 17oz <br>Music : Jiwoong Shinn (Monti Kayoti) "
 }
 let postcorona = {
     "name" : "POSTCORONA",
@@ -33,11 +33,11 @@ let postcorona = {
     "project_num" : "003",
     "year" : "2020, Album, 7 songs",
     "scope" : ["Music", "Mix & Master"],
-    "represent_source" : ["assets/project_source/IMG__OC__1.png", "assets/project_source/IMG__OC__2.png", "assets/project_source/IMG__OC__3.png"],
+    "represent_source" : ["assets/project_source/IMG__OC_1.png", "assets/project_source/IMG__OC_2.png", "assets/project_source/IMG__OC_3.png"],
     "video" : ['false'],
     "link" : ["https://open.spotify.com/album/4XVJ4p4A3my4qaKoQAmzHs?si=Yxc6Uii0TDySSa6RavOIPQ", "Listen", "https://youtu.be/r71OJW6194k", "FORMLESS visual", "https://youtu.be/CyD3Q1mhFe4", "POTENTIAL MV", "https://youtu.be/oVHx8RgiSOk", "LANDSCAPE MV"],
     "description_kr" : "Worked with &nbsp; <span style='text-decoration: underline 1px'>ProjectOC</span>",
-    "description_en" : "Vocal : ProjectOC <br>Video Production : KWONEE <br>Cover Design : ERRANTH <br>Music : Jiwoong Shinn <br>Mixing & Mastering : Jiwoong Shinn "
+    "description_en" : "Vocal : ProjectOC <br>Video Production : KWONEE <br>Cover Design : ERRANTH <br>Music : Jiwoong Shinn (Monti Kayoti)"
 }
 let rem = {
     "name" : "REM",
@@ -46,11 +46,11 @@ let rem = {
     "project_num" : "004",
     "year" : "2021, EP, 5 songs",
     "scope" : ["Music", "Mix & Master"],
-    "represent_source" : ["assets/project_source/IMG__REM__1.png", "assets/project_source/IMG__REM__2.png", "assets/project_source/IMG__REM__3.png"],
+    "represent_source" : ["assets/project_source/IMG__REM_1.png", "assets/project_source/IMG__REM_2.png", "assets/project_source/IMG__REM_3.png"],
     "video" : ['false'],
     "link" : ["https://open.spotify.com/album/3o3wiixU7kea7WqqV0slMD?si=d89YGzskSmiRwooYwGt38A", "Listen"],
     "description_kr" : "Worked with &nbsp; <span style='text-decoration: underline 1px'>Wolf Kooky</span>",
-    "description_en" : "Vocal : Wolf Kooky <br>Animation : Cary Nam <br>Cover Design : Cary Nam <br>Music : Jiwoong Shinn <br>Mixing & Mastering : Jiwoong Shinn "
+    "description_en" : "Vocal : Wolf Kooky <br>Animation : Cary Nam <br>Cover Design : Cary Nam <br>Music : Jiwoong Shinn (Monti Kayoti) "
 }
 let artificial_object = {
     "name" : "ARTIFICIAL OBJECT",
@@ -59,11 +59,11 @@ let artificial_object = {
     "project_num" : "005",
     "year" : "2021, Album, 7 songs",
     "scope" : ["Music", "Mix & Master"],
-    "represent_source" : ["assets/project_source/IMG__AO__1.png", "assets/project_source/IMG__AO__2.png"],
+    "represent_source" : ["assets/project_source/IMG__AO_1.png", "assets/project_source/IMG__AO_2.png"],
     "video" : ['false'],
     "link" : ["https://open.spotify.com/album/4aiYP97aOHtDt4bmEFk69H?si=Pbf1JusYQ9e0jrByDOyu8w", "Listen", "https://youtu.be/ION7EsKobNA", "DIGITS MV", "https://youtu.be/_UdS-lo9Kek", "BLIND SPOT Visual"],
     "description_kr" : "Worked with &nbsp; <span style='text-decoration: underline 1px'>JGP$</span>",
-    "description_en" : "Vocal : JGP$ <br>Video Production for ＜DIGITS＞: SAPIENS <br>Video Production for ＜Blind Spot＞ : ERRANTH<br>Music : Jiwoong Shinn <br>Mixing & Mastering : Jiwoong Shinn"
+    "description_en" : "Vocal : JGP$ <br>Video Production for ＜DIGITS＞: SAPIENS <br>Video Production for ＜Blind Spot＞ : ERRANTH<br>Music : Jiwoong Shinn (Monti Kayoti)"
 }
 let altgal_simple = {
     "name" : "＜간결한 생각들: 생태-젠더-공산＞",
@@ -72,11 +72,11 @@ let altgal_simple = {
     "project_num" : "006",
     "year" : "2021, Exhibition, participated with 1 song",
     "scope" : ["Music"],
-    "represent_source" : ["assets/project_source/IMG__ALT__1.png", "assets/project_source/IMG__ALT__2.png"],
+    "represent_source" : ["assets/project_source/IMG__ALTGAL_1.png", "assets/project_source/IMG__ALTGAL_2.png"],
     "video" : ['false'],
     "link" : ["https://soundcloud.com/montikayoti/a-sequence-for-sinking?si=652cfd9e3fa540809d0c2b76d6069d74&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing","Listen", "http://altspaceloop.com/exhibitions/simplethoughts-2021", "Exhibition Info"],
     "description_kr" : "Worked with &nbsp; <span style='text-decoration: underline 1px'>대안공간루프 (ALT SPACE LOOP)</span>",
-    "description_en" : "Music : Jiwoong Shinn <br>Mixing & Mastering : Jiwoong Shinn"
+    "description_en" : "Exhibition : 대안공간루프 (ALT SPACE LOOP) <br>Music : Jiwoong Shinn (Monti Kayoti)"
 }
 let kasina_kaffe = {
     "name" : "KASINA Kaffe commercial",
@@ -85,11 +85,11 @@ let kasina_kaffe = {
     "project_num" : "007",
     "year" : "2022, Commercial Video, 1 minute",
     "scope" : ["Music"],
-    "represent_source" : ["assets/project_source/IMG__KAFFE__1.png", "assets/project_source/IMG__KAFFE__2.png", "assets/project_source/IMG__KAFFE__3.png", "assets/project_source/IMG__KAFFE__4.png"],
+    "represent_source" : ["assets/project_source/IMG__KAFFE_1.png", "assets/project_source/IMG__KAFFE_2.png", "assets/project_source/IMG__KAFFE_3.png", "assets/project_source/IMG__KAFFE_4.png"],
     "video" : ['false'],
     "link" : ["https://www.kasina.co.kr/goods/event_sale.php?sno=126", "Merchandise Shop"],
     "description_kr" : "Worked with &nbsp; <span style='text-decoration: underline 1px'>Kasina</span>",
-    "description_en" : "Animation : Cary Nam <br>Music : Jiwoong Shinn <br>Mixing & Mastering : Jiwoong Shinn"
+    "description_en" : "Animation : Cary Nam <br>Music : Jiwoong Shinn (Monti Kayoti)"
 }
 let umm_1 = {
     "name" : "꽃내음 vol.1 | UMM vol.1",
@@ -98,11 +98,11 @@ let umm_1 = {
     "project_num" : "008",
     "year" : "2022, Mixset, 46 minutes",
     "scope" : ["Mixset", "Artwork"],
-    "represent_source" : ["assets/project_source/IMG__UMM1__1.png", "assets/project_source/IMG__UMM1__2.png"],
+    "represent_source" : ["assets/project_source/IMG__UMM_1.png", "assets/project_source/IMG__UMM_2.png"],
     "video" : ['false'],
     "link" : ["https://soundcloud.com/montikayoti/umm-vol1?si=fc065ae8160d4da7adf4e738704eb97e&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing", "Listen"],
     "description_kr" : "<span style='text-decoration: underline 1px'>Personal Work</span>",
-    "description_en" : "Curation & Mix : Jiwoong Shinn <br>Cover Design : Jiwoong Shinn "
+    "description_en" : "Curation & Mix : Jiwoong Shinn (Monti Kayoti)<br>Cover Design : Jiwoong Shinn "
 }
 let kasina_seongsu = {
     "name" : "KASINA seongsu ave. commercial",
@@ -111,11 +111,11 @@ let kasina_seongsu = {
     "project_num" : "009",
     "year" : "2022, Commercial Video, 57 seconds",
     "scope" : ["Music"],
-    "represent_source" : ["assets/project_source/IMG__KAFFE__1.png"],
-    "video" : ['true', "assets/project_videos/VID__KASINA__SS.mp4"],
+    "represent_source" : ["assets/project_source/IMG__KAFFE_1.png"],
+    "video" : ['true', "assets/project_videos/VID__KASINASS.mp4"],
     "link" : ["", ""],
     "description_kr" : "Worked with &nbsp; <span style='text-decoration: underline 1px'>Kasina</span>",
-    "description_en" : "Animation : Cary Nam <br>Music : Jiwoong Shinn <br>Mixing & Mastering : Jiwoong Shinn"
+    "description_en" : "Animation : Cary Nam <br>Music : Jiwoong Shinn (Monti Kayoti)"
 }
 let onerm = {
     "name" : "ONERM : NEVER FALL DOWN",
@@ -124,11 +124,11 @@ let onerm = {
     "project_num" : "010",
     "year" : "2022, Commercial Video, 49 seconds",
     "scope" : ["Music"],
-    "represent_source" : ["assets/project_source/IMG__ONERM1__1.png", "assets/project_source/IMG__ONERM1__2.png"],
-    "video" : ['true', "assets/project_videos/VID__ONERM__1_2.mp4"],
+    "represent_source" : ["assets/project_source/IMG__ONERM_1.png", "assets/project_source/IMG__ONERM_2.png"],
+    "video" : ['true', "assets/project_videos/VID__ONERM.mp4"],
     "link" : ["https://youtu.be/EuHSbNYCJ_U", "Video Link"],
     "description_kr" : "Worked with &nbsp; <span style='text-decoration: underline 1px'>ONERM</span>",
-    "description_en" : "Video Production : 이승원<br>Music : Jiwoong Shinn <br>Mixing & Mastering : Jiwoong Shinn"
+    "description_en" : "Video Production : 이승원<br>Music : Jiwoong Shinn (Monti Kayoti)"
 }
 let hyndai_casper = {
     "name" : "HYUNDAI CASPER x KASINA commercial",
@@ -137,11 +137,11 @@ let hyndai_casper = {
     "project_num" : "011",
     "year" : "2022, Commercial Video, 1 minute",
     "scope" : ["Music"],
-    "represent_source" : ["assets/project_source/IMG__CASPER__1.png", "assets/project_source/IMG__CASPER__2.png", "assets/project_source/IMG__CASPER__3.png"],
-    "video" : ['true', "assets/project_videos/VID__CASPER_2.mp4"],
+    "represent_source" : ["assets/project_source/IMG__CASPER_1.png", "assets/project_source/IMG__CASPER_2.png", "assets/project_source/IMG__CASPER_3.png"],
+    "video" : ['true', "assets/project_videos/VID__CASPER.mp4"],
     "link" : ["", ""],
-    "description_kr" : "Worked with &nbsp; <span style='text-decoration: underline 1px'>Hyundai CASPER, Kasina</span>",
-    "description_en" : "Animation : Cary Nam <br>Music : Jiwoong Shinn <br>Mixing & Mastering : Jiwoong Shinn"
+    "description_kr" : "Worked with &nbsp; <span style='text-decoration: underline 1px'>Hyundai Motors, Kasina</span>",
+    "description_en" : "Animation : Cary Nam <br>Music : Jiwoong Shinn (Monti Kayoti)"
 }
 let reservoir_dogs = {
     "name" : "RESERVOIR DOGS mix",
@@ -150,11 +150,11 @@ let reservoir_dogs = {
     "project_num" : "012",
     "year" : "2022, Mixset, 1 hour",
     "scope" : ["Mixset", "Artwork", "Performance"],
-    "represent_source" : ["assets/project_source/IMG__RESERVOIR__1.png", "assets/project_source/IMG__RESERVOIR__2.png", "assets/project_source/IMG__RESERVOIR__3.png"],
+    "represent_source" : ["assets/project_source/IMG__RES_1.png", "assets/project_source/IMG__RES_2.png", "assets/project_source/IMG__RES_3.png"],
     "video" : ['false'],
     "link" : ["https://soundcloud.com/montikayoti/reservoir_dogs_mixmp3?si=3266bf45ea83445fa38e2b17f337fd02&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing", "Listen"],
     "description_kr" : "Worked with &nbsp; <span style='text-decoration: underline 1px'>저수지 (Reservoir) @ hongdae</span>",
-    "description_en" : "Curation & Mix : Jiwoong Shinn <br>Cover Design : Jiwoong Shinn"
+    "description_en" : "Curation & Mix : Jiwoong Shinn (Monti Kayoti) <br>Cover Design : Jiwoong Shinn"
 }
 let picit = {
     "name" : "PICIT",
@@ -162,8 +162,8 @@ let picit = {
     "project_num" : "013",
     "year" : "2022, Website",
     "scope" : ["Frontend & Backend Development", "Web Design"],
-    "represent_source" : ["assets/project_source/IMG__PICIT__1.png", "assets/project_source/IMG__PICIT__2.png", "assets/project_source/IMG__PICIT__3.png", "assets/project_source/IMG__PICIT__4.png"],
-    "video" : ['true', "assets/project_videos/VID__PICIT.mp4"],
+    "represent_source" : ["assets/project_source/IMG__PICIT_1.png", "assets/project_source/IMG__PICIT_2.png", "assets/project_source/IMG__PICIT_3.png", "assets/project_source/IMG__PICIT_4.png"],
+    "video" : ['true', "assets/project_videos/VID__PICIT_FINAL_2.mp4"],
     "link" : ["https://github.com/shinnjiwoong/PicIt.com", "About Project"],
     "description_kr" : "<span style='text-decoration: underline 1px'>Personal Work</span>",
     "description_en" : "Frontend Development : Jiwoong Shinn & Sungwon Yuk <br>Backend Development : Jiwoong Shinn <br>Web Design : Jiwoong Shinn"
@@ -175,11 +175,11 @@ let gnyang_2022 = {
     "project_num" : "014",
     "year" : "2022, EP, 5 songs",
     "scope" : ["Music"],
-    "represent_source" : ["assets/project_source/IMG__GNY22__1.png", "assets/project_source/IMG__GNY22__2.png"],
+    "represent_source" : ["assets/project_source/IMG__GNY_1.png", "assets/project_source/IMG__GNY_2.png"],
     "video" : ['false', ""],
     "link" : ["https://soundcloud.com/montikayoti/sets/gnyang_20_21-monti-kayoti-x-jamwon?si=60ba5e9e80724150b6a88ecd96d39bb8&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing", "Listen"],
     "description_kr" : "<span style='text-decoration: underline 1px'>Personal Work</span>",
-    "description_en" : "Cover Design : Sicky Cho<br>Music : Jiwoong Shinn & JAMWON"
+    "description_en" : "Cover Design : Sicky Cho<br>Music : Jiwoong Shinn (Monti Kayoti) & JAMWON"
 }
 let shinnjiwoong = {
     "name" : "SHINNJIWOONG",
@@ -187,8 +187,8 @@ let shinnjiwoong = {
     "project_num" : "016",
     "year" : "2023, Website",
     "scope" : ["Frontend Development", "Web Design", "Music"],
-    "represent_source" : ["assets/project_source/IMG__PORTFO__1.png", "assets/project_source/IMG__PORTFO__2.png", "assets/project_source/IMG__PORTFO__3.png", "assets/project_source/IMG__PORTFO__4.png"],
-    "video" : ['true', "assets/project_videos/VID__PORTFO.mp4"],
+    "represent_source" : ["assets/project_source/IMG__SJW_1.png", "assets/project_source/IMG__SJW_2.png", "assets/project_source/IMG__SJW_3.png", "assets/project_source/IMG__SJW_4.png"],
+    "video" : ['true', "assets/project_videos/VID__SJW.mp4"],
     "link" : ["https://github.com/shinnjiwoong/shinnjiwoong.com", "About Project"],
     "description_kr" : "<span style='text-decoration: underline 1px'>Personal Work</span>",
     "description_en" : "Web Development & Design : Jiwoong Shinn<br>Music : Jiwoong Shinn"
@@ -199,11 +199,11 @@ let exodus = {
     "project_num" : "015",
     "year" : "2023, 3D Animation, 5:03",
     "scope" : ["Music", "Sound Design"],
-    "represent_source" : ["assets/project_source/IMG__EXODUS__1.png", "assets/project_source/IMG__EXODUS__2.png", "assets/project_source/IMG__EXODUS__3.png", "assets/project_source/IMG__EXODUS__4.png", "assets/project_source/IMG__EXODUS__5.png", "assets/project_source/IMG__EXODUS__6.png"],
+    "represent_source" : ["assets/project_source/IMG__EXODUS_1.png", "assets/project_source/IMG__EXODUS_2.png", "assets/project_source/IMG__EXODUS_3.png", "assets/project_source/IMG__EXODUS_4.png", "assets/project_source/IMG__EXODUS_5.png", "assets/project_source/IMG__EXODUS_6.png"],
     "video" : ['false', ""],
     "link" : ["", ""],
     "description_kr" : "Worked with &nbsp;<span style='text-decoration: underline 1px;'>Cary Nam & Jimin Choi</span>",
-    "description_en" : "Video Production : Cary Nam & Jimin Choi<br>Music : Jiwoong Shinn"
+    "description_en" : "Video Production : Cary Nam & Jimin Choi<br>Music : Jiwoong Shinn (Monti Kayoti)"
 }
 
 
@@ -231,7 +231,7 @@ let page_var = 1;
 // ARRAY 
 
 let sections = [sec_1, sec_2, sec_3, sec_4];
-let project_arr = [shinnjiwoong, exodus, gnyang_2022, picit, reservoir_dogs, hyndai_casper, onerm, kasina_seongsu, umm_1, kasina_kaffe, altgal_simple, artificial_object, rem, postcorona, datura, mindcraft];
+let project_arr = [shinnjiwoong, picit, hyndai_casper, altgal_simple, onerm, kasina_seongsu, kasina_kaffe, exodus, gnyang_2022, reservoir_dogs,   umm_1,   artificial_object, rem, postcorona, datura, mindcraft];
 
 
 function getPageNum(){

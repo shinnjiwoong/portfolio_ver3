@@ -183,6 +183,19 @@ function handleWindowClick(){
 
 //  색 랜덤 변경 
 function randomColorChange(e){
-    e.style.backgroundColor = `rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)})`;
+    let r = 0;
+    let g = 0;
+    let b = 0;
+    let luma = 0;
+
+    while(luma < 125){
+        r = Math.floor(Math.random() * 255);
+        g = Math.floor(Math.random() * 255);
+        b = Math.floor(Math.random() * 255);
+
+        luma = 0.2126*r + 0.7152*g + 0.0722*b;
+        console.log(luma)
+    }
+    e.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 }
 
