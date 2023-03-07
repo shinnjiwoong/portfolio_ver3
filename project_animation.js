@@ -235,7 +235,6 @@ let project_arr = [shinnjiwoong, picit, hyndai_casper, altgal_simple, onerm, kas
 
 
 function getPageNum(){
-    console.log(project_arr.length)
     if(project_arr.length % 4 != 0){
         return parseInt(project_arr.length / 4) + 1
     }else{

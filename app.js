@@ -194,7 +194,6 @@ function randomColorChange(e){
         b = Math.floor(Math.random() * 255);
 
         luma = 0.2126*r + 0.7152*g + 0.0722*b;
-        console.log(luma)
     }
     e.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 }
