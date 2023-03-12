@@ -54,7 +54,7 @@ window.addEventListener("mousemove", async (e)=>{
     // stat의 현재 상태에 따라서 커서의 모양이 변경된다.
 
     if(stat == "home"){
-        music__container.style.cursor = "none"
+        music_container.style.cursor = "none"
         if(e.target.classList.contains("link")){
             cursor_design.setAttribute('src', 'assets/web_logo/cursor/link.png')
             cursor_design.style.animation = "none"
