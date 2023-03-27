@@ -205,7 +205,18 @@ let exodus = {
     "description_kr" : "Worked with &nbsp;<span style='text-decoration: underline 1px;'>Cary Nam & Jimin Choi</span>",
     "description_en" : "Video Production : Cary Nam & Jimin Choi<br>Music : Jiwoong Shinn (Monti Kayoti)"
 }
-
+let underfoot = {
+    "name" : "UNDERFOOT",
+    "form" : "Website",
+    "project_num" : "017",
+    "year" : "2023, Website",
+    "scope" : ["Frontend Development", "Web Design"],
+    "represent_source" : ["assets/project_source/IMG__UNDERFOOT_1.png", "assets/project_source/IMG__UNDERFOOT_2.png"],
+    "video" : ['true', "assets/project_videos/VID__Underfoot.mp4"],
+    "link" : ["https://github.com/shinnjiwoong/UNDERFOOT", "About Project"],
+    "description_kr" : "Worked with &nbsp;<span style='text-decoration: underline 1px;'>Underfoot</span>",
+    "description_en" : "Web Development & Design : Jiwoong Shinn"
+}
 
 
 
@@ -231,7 +242,7 @@ let page_var = 1;
 // ARRAY 
 
 let sections = [sec_1, sec_2, sec_3, sec_4];
-let project_arr = [shinnjiwoong, picit, hyndai_casper, altgal_simple, onerm, kasina_seongsu, kasina_kaffe, exodus, gnyang_2022, reservoir_dogs,   umm_1,   artificial_object, rem, postcorona, datura, mindcraft];
+let project_arr = [underfoot, shinnjiwoong, picit, hyndai_casper, altgal_simple, onerm, kasina_seongsu, kasina_kaffe, exodus, gnyang_2022, reservoir_dogs,   umm_1,   artificial_object, rem, postcorona, datura, mindcraft];
 
 
 function getPageNum(){
