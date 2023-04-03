@@ -51,11 +51,6 @@ https://user-images.githubusercontent.com/109443641/221835931-5b10014a-f9d3-4ba8
   - 정적인 웹사이트에서 느껴질 수 있는 지루함을 보완하기 위한 두번째 도구로 직접 제작한 음악이 재생되도록 구현했다.
   - 음악은 리듬감이 확실한 장르로 제작하여 정적인 분위기의 웹사이트를 둘러보는 동안에 조금 더 생동감 있는 경험을 만들고자 했다.
 
- ### 구현 화면 / Project Screens
-<img width="1000" alt="IMG__SJW_1" src="https://user-images.githubusercontent.com/109443641/221836350-9a5d50ed-ce97-47ee-a4b8-5c88602cc804.png"><img width="1000" alt="IMG__SJW_3" src="https://user-images.githubusercontent.com/109443641/221836421-f85ecc51-dbaf-4380-9d7e-c39d23416e4c.png">
-
-<img width="1000" alt="IMG__SJW_3" src="https://user-images.githubusercontent.com/109443641/221836361-91791588-c277-4c31-852c-2b7931ad50bd.png"><img width="1000" alt="IMG__SJW_4" src="https://user-images.githubusercontent.com/109443641/221836364-ccef6d3a-9757-4c2b-8e81-667755c585ff.png">
-
 --- 
 
  ## 프로젝트 리뷰 / Project Review
