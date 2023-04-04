@@ -1,7 +1,7 @@
 # SHINNJIWOONG.COM 
 
 ## 프로젝트 개요 / Project Overview
-https://user-images.githubusercontent.com/109443641/221835931-5b10014a-f9d3-4ba8-b0ea-2946e092b9e4.mp4
+https://user-images.githubusercontent.com/109443641/229678117-1f38e944-12c7-4666-a320-cb96d15c5a4c.mp4
 
 <br>
 <a href="http://www.shinnjiwoong.com/">www.shinnjiwoong.com</a> <br><br>
