@@ -111,7 +111,7 @@ let kasina_seongsu = {
     "project_num" : "009",
     "year" : "2022, Commercial Video, 57 seconds",
     "scope" : ["Music"],
-    "represent_source" : ["assets/project_source/IMG__KAFFE_1.png"],
+    "represent_source" : ["false"],
     "video" : ['true', "assets/project_videos/VID__KASINASS.mp4"],
     "link" : ["", ""],
     "description_kr" : "Worked with &nbsp; <span style='text-decoration: underline 1px'>Kasina</span>",
@@ -124,7 +124,7 @@ let onerm = {
     "project_num" : "010",
     "year" : "2022, Commercial Video, 49 seconds",
     "scope" : ["Music"],
-    "represent_source" : ["assets/project_source/IMG__ONERM_1.png", "assets/project_source/IMG__ONERM_2.png"],
+    "represent_source" : ["false"],
     "video" : ['true', "assets/project_videos/VID__ONERM.mp4"],
     "link" : ["https://youtu.be/EuHSbNYCJ_U", "Video Link"],
     "description_kr" : "Worked with &nbsp; <span style='text-decoration: underline 1px'>ONERM</span>",
@@ -137,7 +137,7 @@ let hyndai_casper = {
     "project_num" : "011",
     "year" : "2022, Commercial Video, 1 minute",
     "scope" : ["Music"],
-    "represent_source" : ["assets/project_source/IMG__CASPER_1.png", "assets/project_source/IMG__CASPER_2.png", "assets/project_source/IMG__CASPER_3.png"],
+    "represent_source" : ["false"],
     "video" : ['true', "assets/project_videos/VID__CASPER.mp4"],
     "link" : ["", ""],
     "description_kr" : "Worked with &nbsp; <span style='text-decoration: underline 1px'>Hyundai Motors, Kasina</span>",
@@ -162,7 +162,7 @@ let picit = {
     "project_num" : "013",
     "year" : "2022, Website",
     "scope" : ["Frontend & Backend Development", "Web Design"],
-    "represent_source" : ["assets/project_source/IMG__PICIT_1.png", "assets/project_source/IMG__PICIT_2.png", "assets/project_source/IMG__PICIT_3.png", "assets/project_source/IMG__PICIT_4.png"],
+    "represent_source" : ["false"],
     "video" : ['true', "assets/project_videos/VID__PICIT_FINAL_2.mp4"],
     "link" : ["https://github.com/shinnjiwoong/PicIt.com", "About Project"],
     "description_kr" : "<span style='text-decoration: underline 1px'>Personal Work</span>",
@@ -187,8 +187,8 @@ let shinnjiwoong = {
     "project_num" : "016",
     "year" : "2023, Website",
     "scope" : ["Frontend Development", "Web Design", "Music"],
-    "represent_source" : ["assets/project_source/IMG__SJW_1.png", "assets/project_source/IMG__SJW_2.png", "assets/project_source/IMG__SJW_3.png", "assets/project_source/IMG__SJW_4.png"],
-    "video" : ['true', "assets/project_videos/VID__SJW.mp4"],
+    "represent_source" : ["false"],
+    "video" : ['true', "assets/project_videos/SJW_REC.mp4"],
     "link" : ["https://github.com/shinnjiwoong/shinnjiwoong.com", "About Project"],
     "description_kr" : "<span style='text-decoration: underline 1px'>Personal Work</span>",
     "description_en" : "Web Development & Design : Jiwoong Shinn<br>Music : Jiwoong Shinn"
@@ -211,8 +211,8 @@ let underfoot = {
     "project_num" : "017",
     "year" : "2023, Website",
     "scope" : ["Frontend Development", "Web Design"],
-    "represent_source" : ["assets/project_source/IMG__UNDERFOOT_1.png", "assets/project_source/IMG__UNDERFOOT_2.png"],
-    "video" : ['true', "assets/project_videos/VID__Underfoot.mp4"],
+    "represent_source" : ['false'],
+    "video" : ['true', "assets/project_videos/UNDERFOOT__REC.mp4"],
     "link" : ["https://github.com/shinnjiwoong/UNDERFOOT", "About Project"],
     "description_kr" : "Worked with &nbsp;<span style='text-decoration: underline 1px;'>Underfoot</span>",
     "description_en" : "Web Development & Design : Jiwoong Shinn"
@@ -389,9 +389,18 @@ async function showProject(e,p){
 
     await hideProject(project_front_container, project_back_container);
 
+    if(p.represent_source == 'false'){
+        project_arrow_l.style.display = 'none'
+        project_arrow_r.style.display = 'none'
+    }else{
+        project_arrow_l.style.display = 'inline-block'
+        project_arrow_r.style.display = 'inline-block'
+    }
+
     setTimeout(async function(){
         // project_img.src = p.represent_source[0];
-        await showImg(p, project_img, 0);
+        // await showImg(p, project_img, 0);
+
         project_title.innerText = p.name;
         project_index.innerText = `${p.year}`
         project_desc_kr.innerHTML = p.description_kr;
@@ -431,11 +440,19 @@ async function showProject(e,p){
         if(p.video[0] == "false"){
             project_vid.style.display = "none";
             project_vid.src = "";
+            project_img.style.display = 'block'
+            await showImg(p, project_img, 0)
         }else if(p.video[0] == "true"){
-            // project_vid.src = p.video[1];
-            await showVid(p, project_vid, 1);
+            if(p.represent_source == 'false'){
+                project_img.style.display = 'none'
+                await showVid(p, project_vid, 1);
+            }else{
+                await showVid(p, project_vid, 1);
+            }
+            
             project_vid.style.display = "inline-block";
         }
+
         for(let i = 0; i < project_scope_len; i++){
             let scope_node = document.createElement('p');
             let comma = document.createElement('p');
@@ -450,14 +467,16 @@ async function showProject(e,p){
         project_scope_container.lastChild.remove();
     }, 500)
     
-    project_img.addEventListener("load", async ()=>{
-        await showFront(project_front_container, project_back_container)
-    })
+    if(p.represent_source == 'false'){
+        project_vid.addEventListener('loadeddata', async ()=>{
+            await showFront(project_front_container, project_back_container);
+        })
+    }else if(p.video[0] == 'false'){
+        project_img.addEventListener("load", async ()=>{
+            await showFront(project_front_container, project_back_container)
+        })
+    }
     project_img.addEventListener("click", async (e)=>{
-        
-        let rect_width = rect.width;
-        let rect_height = rect.height;
-        let cursorPoint = await getCursor(e.clientX, e.clientY);
         if(e.clientX>40 && e.clientX<window.innerWidth-40){
             await showBack(project_front_container, project_back_container);
         }
